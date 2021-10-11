@@ -15,9 +15,25 @@ export default {
     Navbar
   }
 }
+
 </script>
 
-<style>
+<style lang="scss">
+.my{
+@import "~bulma/sass/utilities/functions";
+
+// Set your colors
+$primary: #209cee;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+}
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,4 +42,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
+
+
+
+
+
+

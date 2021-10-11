@@ -1,7 +1,7 @@
 <template>
-    <div style="width: 50%;">
+    <div>
         <b-button icon-right="arrow-left" style="display: inline; margin-top: 15%; margin-right: 10px;" v-on:click="decrementIndex"/>
-        <img v-bind:src="getImageSrc" style="display: inline; width: 75%">
+        <img v-bind:src="getImageSrc" style="display: inline; width: 75%; height: 350px">
         <b-button icon-right="arrow-right" style="display: inline; margin-top: 15%; margin-left: 10px;" v-on:click="incrementIndex"/>
         <div style="margin-top: 20px;"> 
             <div :style="currentIndex == element - 1 ? 'background-color: #FF0000' : 'background-color: #000000'" style="width: 10px; height: 10px; margin: 5px; display: inline-block;" v-for="element in totalImageCount + 1" v-bind:key="element" v-on:click="setIndex(element - 1)"></div>
@@ -14,7 +14,7 @@ export default {
     data() {
         return {
             currentIndex: 0,
-            totalImageCount: 1,
+            totalImageCount: 2,
             imageInterval: null
         }
     },

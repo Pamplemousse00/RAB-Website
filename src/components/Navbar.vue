@@ -20,12 +20,12 @@
             About Us
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="818" class="navbar-item">
+            <router-link to="/Philanthropy" class="navbar-item">
               Philanthropy
             </router-link>
-            <a class="navbar-item">
+            <router-link to="/staff" class="navbar-item">
               Staff
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -35,6 +35,9 @@
           <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="818" class="navbar-item">
               Referrals
+            </router-link>
+            <router-link to="/eac" class="navbar-item">
+              Early Arthritis Clinic
             </router-link>
           </div>
         </div>
@@ -52,7 +55,7 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="818" class="navbar-link">
+          <router-link to="/links" class="navbar-link">
             Links
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
@@ -65,7 +68,7 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="818" class="navbar-link">
+          <router-link to="/faqs" class="navbar-link">
             FAQ
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
