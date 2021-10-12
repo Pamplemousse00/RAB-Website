@@ -55,7 +55,7 @@ export default {
                 name: "Dilnoor Siddhu",
                 role: "Medical Scribe",
                 description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/vandana.jpg'),
+                image: require('@/assets/images/staff/dilnoor.jpg'),
               }
             ]
           },
@@ -80,10 +80,10 @@ export default {
             image: require('@/assets/images/staff/raman.jpg'),
             children: [
               {
-                name: "Sandra",
+                name: "Debbie",
                 role: "MOA",
                 description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/sandra.jpg'),
+                image: require('@/assets/images/staff/debbie.jpg'),
               }
             ]
           },
@@ -92,11 +92,25 @@ export default {
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/sangeeta.jpg'),
-            children: []
+            children: [
+              {
+                name: "Sandra",
+                role: "MOA",
+                description: "Lorem ipsum dolor di amet whatever.",
+                image: require('@/assets/images/staff/sandra.jpg'),
+              }
+            ]
           },
           {
             name: "Lisa",
-            role: "acpac therapist?",
+            role: "EAC ACPAC therapist?",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/lisa.jpg'),
+            children: []
+          },
+          {
+            name: "Mercedes",
+            role: "Arthritis Society ACPAC therapist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/lisa.jpg'),
             children: []

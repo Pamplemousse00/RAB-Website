@@ -28,15 +28,15 @@ export default {
   data() {
     return {
       allLinks: [
-        "www.arthtirissociety.com",
+        "arthritis.ca",
         "rheuminfo.com",
         "www.peelregion.ca/health/",
         "www.williamoslerhs.ca",
-        "https://www.aaos.org/",
-        "https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner"
+        "www.aaos.org",
+        "www.ontario.ca/page/find-family-doctor-or-nurse-practitioner"
       ],
       physicianLinks: [
-        "www.arthtirissociety.com",
+        "arthritis.ca",
         "ontariorheum.ca",
         "rheum.ca",
         "rheuminfo.com",

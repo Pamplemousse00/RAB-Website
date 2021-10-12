@@ -3,6 +3,8 @@
   <div class="heading1">
     EAC
   </div>
+  This clinic is for adults with suspected rheumatoid arthritis. Our goal is to confirm your condition early so that treatment can begin as soon as possible. <br>
+Appointments are by physician referral only. Through this clinic, you will also have access to an education program through Ontario Telehealth Network. Other types of inflammatory arthritis can be referred to a rheumatologist's office
   <div class="heading1">
     Referral form
   </div>

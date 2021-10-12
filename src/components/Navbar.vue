@@ -33,7 +33,7 @@
             For Physicians
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="818" class="navbar-item">
+            <router-link to="/referrals" class="navbar-item">
               Referrals
             </router-link>
             <router-link to="/eac" class="navbar-item">

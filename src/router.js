@@ -6,6 +6,7 @@ import Links from './components/Links.vue'
 import EAC from './components/EAC.vue'
 import Philanthropy from './components/Philanthropy.vue'
 import Staff from './components/Staff.vue'
+import Referrals from './components/Referrals.vue'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/staff',
       name: 'Staff',
       component: Staff
+    },
+    {
+      path: '/referrals',
+      name: 'Referrals',
+      component: Referrals
     },
   ]
 })

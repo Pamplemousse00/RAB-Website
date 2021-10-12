@@ -34,35 +34,61 @@ export default {
     return {
       allFAQs: [
         {
-          question: "I've had a cortisone injection.",
-          answer: "If you have had a cortisone injection, it is recommended that you rest that joint or tendon for the next 24-48 hours.  For mild discomfort, you can apply ice as needed. Watch for signs of infection such as redness, increased pain , or swelling that lasts more than 48 hours."
-        },
-        {
           question: "What to bring to appointment?",
-          answer: "Bring medication pill bottles, health card and wear loose clothing."
+          answer: "Bring health card, medication pill bottles or an up-to-date medication list (your family doctor or pharmacist can help you with this), and wear loose clothing."
         },
         {
-          question: "Parking situation?",
-          answer: "Paid parking is available."
+          question: "I cannot speak English well. What should I do?",
+          answer: "The doctors can speak Hindi and Punjabi. Not all office staff is fluent in those languages. For other languages, please bring an interpreter."
+        },
+         
+        {
+          question: "Is parking available?",
+          answer: `Parking is available for a fee. We recommend:
+          New patients: 2 hours
+          Follow-up appointment: 1 hour
+          If you have any issues, contact ParkSmart at '1-800-561-1972'`
         },
         {
           question: "How to get ahold of us?",
-          answer: "Please leave a voicemail. 647-000-0000. We will check it. Leave a detailed message with your name, phone number, Date of Birth, and what you're calling about."
-        },
-        {
-          question: "I'm having a reaction to my medication.",
           answer: `Call the office line : 
-Dr. Ahluwalia: 905-799-1850
+Dr. Ahluwalia: 905-799-1850 ext 221
 Dr Bajaj: 905-799-1850 ext 231
 Dr. Joshi: 
 Dr. Papneja:
-If it is an emergency,  call 911 or proceed to the nearest Emergency Department to you.
-`
+Leave a detailed message with your name, phone number, Date of Birth, and what you're calling about.
+If it is an emergency,  call 911 or proceed to the nearest Emergency Department to you.`
         },
         {
           question: "I cannot make it to my appointment.",
-          answer: "Call and leave a message at the office as early as possible. Many patients wait months to see us."
-        }
+          answer: "Please call the office right away to inform us that you are canceling the appointment. You can leave a voicemail with your full name, date of birth and appointment date & time.  Please reschedule your appointment to ensure follow up for your test results and medical conditions. "
+        },
+        {
+          question: "I've had a cortisone(steriod) injection.",
+          answer: "If you have had a cortisone(steriod) injection, it is recommended that you rest that joint or tendon for the next 24-48 hours.  For mild discomfort, you can apply ice as needed. Watch for signs of infection such as redness, increased pain , or swelling that lasts more than 48 hours."
+        },
+        
+        
+       
+        {
+          question: "I'm having a reaction to my medication.",
+          answer: `
+          We need to know if you're having a problem after taking a medication we prescribed.  It is important that you contact our office and let us know.  Stop taking your medication until you hear back.  
+
+Many times the problem might not be the medication, and it can be restarted.
+If you are having a medical emergency, call 911 or proceed to the nearest Emergency Department to you.`
+        },
+        
+        {
+          question: "I have been referred for physiotherapy and I don't have private insurance coverage. Am I eligible for OHIP-covered physiotherapy? ",
+          answer: `Make this "please click here" Please visit this link: https://www.ontario.ca/page/physiotherapy-clinics-government-funded to see if you are eligible.
+          If you are eligible, visit this link to see clinics that may be near you.
+          https://www.health.gov.on.ca/en/public/programs/physio/pub_clinics.aspx`
+        },
+        {
+          question: "COVID-19 Vaccination Booster.",
+          answer: "A doctors note is not required. If you are on any of the medications listed in this link (https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_third_dose_recommendations.pdf), bring them to the immunization centre to receive your third dose."
+        },
       ]
     }
   },
