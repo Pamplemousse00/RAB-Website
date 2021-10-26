@@ -2,7 +2,7 @@
   <div id="app">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
     <Navbar />
-    <router-view />
+    <router-view style="margin-top: 100px"/>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-.my{
+
 @import "~bulma/sass/utilities/functions";
 
 // Set your colors
@@ -31,7 +31,7 @@ $primary-invert: findColorInvert($primary);
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
-}
+
 
 
 #app {

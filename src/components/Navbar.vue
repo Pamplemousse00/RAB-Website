@@ -1,10 +1,12 @@
 <template>
-  <nav class="navbar is-primary is-fixed-top">
+  <nav class="navbar is-dark is-fixed-top" style="background-color: #994593">
     <div class="container">
-
+      <img :src="logoSource" width="120" height="100" style="margin-top: 0px; margin-right: -10px;">
     <div class="navbar-brand">
-      <router-link to="/" class="navbar-item" style="font-size: 25px">
-        <img :src="logoSource" width="50" height="50">
+      <router-link to="/" class="navbar-item" style="background-color:white;">
+        <div style="font-size: 30px; color: black">
+        RheumBrampton
+        </div>
       </router-link>
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -20,12 +22,13 @@
             About Us
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="/Philanthropy" class="navbar-item">
-              Philanthropy
-            </router-link>
             <router-link to="/staff" class="navbar-item">
               Staff
             </router-link>
+            <router-link to="/Philanthropy" class="navbar-item">
+              Philanthropy
+            </router-link>
+            
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -127,7 +130,7 @@ nav.navbar {
   font-weight: 300;
 }
 .navbar-item, .navbar-link {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
 }
 </style>

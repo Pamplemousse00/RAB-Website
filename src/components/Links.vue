@@ -28,19 +28,20 @@ export default {
   data() {
     return {
       allLinks: [
-        { name: "Arthritis Society", link: "arthritis.ca" },
         { name: "Rheum Info", link: "rheuminfo.com" },
+        { name: "American Academy of Orthopaedic Surgeons", link: "www.aaos.org" },
+        { name: "Arthritis Society", link: "arthritis.ca" },
+        { name: "AREP Referral Form", link: "gccrm-arthritis.goldcareonline.net/arthritiscrmlive/ "},
+        { name: "How to Find a Family Doctor", link: "www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" },
         { name: "Region of Peel Health Services", link: "www.peelregion.ca/health/" },
         { name: "William Osler Health System", link: "www.williamoslerhs.ca" },
-        { name: "American Academy of Orthopaedic Surgeons", link: "www.aaos.org" },
-        { name: "How to Find a Family Doctor", link: "www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" },
-        { name: "AREP Referral Form", link: "gccrm-arthritis.goldcareonline.net/arthritiscrmlive/ "}
+        
       ],
       physicianLinks: [
+        { name: "Arthritis Society", link: "rheuminfo.com" },
         { name: "Arthritis Society", link: "arthritis.ca" },
         { name: "Arthritis Society", link: "ontariorheum.ca" },
         { name: "Arthritis Society", link: "rheum.ca" },
-        { name: "Arthritis Society", link: "rheuminfo.com" },
         { name: "Arthritis Society", link: "www.williamoslerhs.ca" },
       ]
     }
