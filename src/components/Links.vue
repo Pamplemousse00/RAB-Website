@@ -5,8 +5,8 @@
   </div>
   <div class="card" v-for="link in allLinks" :key="link" style="margin-bottom:5px">
     <header class="card-header">
-      <p class="card-header-title" @click="openInNewTab(link)" style="cursor:pointer">
-        {{link}}
+      <p class="card-header-title" @click="openInNewTab(link.link)" style="cursor:pointer">
+        {{link.name}}
       </p>
     </header>
   </div>
@@ -15,8 +15,8 @@
   </div>
   <div class="card" v-for="link in physicianLinks" :key="link" style="margin-bottom:5px">
     <header class="card-header">
-      <p class="card-header-title" @click="openInNewTab(link)" style="cursor:pointer">
-        {{link}}
+      <p class="card-header-title" @click="openInNewTab(link.link)" style="cursor:pointer">
+        {{link.name}}
       </p>
     </header>
   </div>
@@ -28,19 +28,20 @@ export default {
   data() {
     return {
       allLinks: [
-        "arthritis.ca",
-        "rheuminfo.com",
-        "www.peelregion.ca/health/",
-        "www.williamoslerhs.ca",
-        "www.aaos.org",
-        "www.ontario.ca/page/find-family-doctor-or-nurse-practitioner"
+        { name: "Arthritis Society", link: "arthritis.ca" },
+        { name: "Rheum Info", link: "rheuminfo.com" },
+        { name: "Region of Peel Health Services", link: "www.peelregion.ca/health/" },
+        { name: "William Osler Health System", link: "www.williamoslerhs.ca" },
+        { name: "American Academy of Orthopaedic Surgeons", link: "www.aaos.org" },
+        { name: "How to Find a Family Doctor", link: "www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" },
+        { name: "AREP Referral Form", link: "gccrm-arthritis.goldcareonline.net/arthritiscrmlive/ "}
       ],
       physicianLinks: [
-        "arthritis.ca",
-        "ontariorheum.ca",
-        "rheum.ca",
-        "rheuminfo.com",
-        "www.williamoslerhs.ca"
+        { name: "Arthritis Society", link: "arthritis.ca" },
+        { name: "Arthritis Society", link: "ontariorheum.ca" },
+        { name: "Arthritis Society", link: "rheum.ca" },
+        { name: "Arthritis Society", link: "rheuminfo.com" },
+        { name: "Arthritis Society", link: "www.williamoslerhs.ca" },
       ]
     }
   },

@@ -4,7 +4,7 @@
 
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item" style="font-size: 25px">
-        RheumBrampton
+        <img :src="logoSource" width="50" height="50">
       </router-link>
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -100,7 +100,8 @@ export default {
   data () {
     return {
       showNav: false,
-      name: ''
+      name: '',
+      logoSource: require('@/assets/images/tempLogo.jpg'),
     }
   },
   methods: {

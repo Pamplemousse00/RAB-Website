@@ -3,8 +3,8 @@
   <div class="heading1">
     Referral Form
   </div>
-  <object data="./assets/cart1.pdf" type="application/pdf">
-    <embed src="./assets/cart1.pdf" type="application/pdf" />
+  <object data="./cart1.pdf" type="application/pdf" style="height:80vh; width: 80%">
+    <embed src="./cart1.pdf" type="application/pdf" />
   </object>
 </div>
 </template>

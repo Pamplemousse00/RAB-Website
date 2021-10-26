@@ -4,22 +4,22 @@
       <div class="columns" style="margin-top: 50px">
         <div class="column">
           <div style="font-size: 30px; margin-bottom: 30px">
-            Insert some text
+            Welcome to Rheum Brampton
           </div>
           <Slideshow />
         </div>
         <div class="column">
           <b-notification type="is-success" aria-close-label="Close notification">
-            <h1>Location</h1>
+            <h1>Types of Appiontments?</h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
         </b-notification>
-        <b-notification type="is-success" aria-close-label="Close notification">
+        <b-notification type="is-primary" aria-close-label="Close notification">
             <h1>What to bring?</h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
         </b-notification>
-        <b-notification type="is-success" aria-close-label="Close notification">
-            <h1>Types of Appiontments</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        <b-notification type="is-warning" @click.native="$router.push('/faqs')">
+            <h1>FAQs?</h1>
+                Click <router-link to="/faqs">here</router-link> to view more frequently asked questions.
         </b-notification>
         </div>
       </div>
