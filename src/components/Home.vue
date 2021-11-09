@@ -6,9 +6,14 @@
           <Slideshow />
         </div>
         <div class="column" style="display: inline-flex">
-          <div class="infoContainer" style="background-color: #bbab9e"><div style="font-size: 25px; color:black; margin-top: 10px">Our Doctors</div></div>
-          <div class="infoContainer" style="background-color: #caa064"></div>
-          <div class="infoContainer" style="background-color: #994593"></div>
+          <div class="columns">
+            <div class="column">
+              <div class="infoContainer" style="background-color: #caa064"><div style="font-size: 25px; padding-top: 10px; color: black; font-weight: bold">What is a Rheumatologist?</div></div>
+            </div>
+            <div class="column">
+               <div class="infoContainer" style="background-color: #994593"><div style="font-size: 25px; padding-top: 10px; color: white; font-weight: bold;">What is an ACPAC Therapist?</div></div>
+            </div>
+          </div>         
         </div>
       </div>
     </div>
@@ -24,7 +29,7 @@
       </div>
     </div>
     <div class="row" style="height: 110px; background-color: #994593; color: white; font-size: 35px">
-      Rheumatoloogy Associated RheumBrampton suite 32423 askjdfhwaejfhwkljef
+      Rheumatology Associates Brampton 2021
     </div>
     
   </div>
@@ -69,8 +74,8 @@ h2 {
 .infoContainer{
   margin-top: 30px;
   margin-right: 20px;
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 </style>

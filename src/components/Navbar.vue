@@ -37,10 +37,7 @@
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="/referrals" class="navbar-item">
-              AREP Referral
-            </router-link>
-            <router-link to="/referrals" class="navbar-item">
-              Rheum Referral
+              Referrals
             </router-link>
             <router-link to="/eac" class="navbar-item">
               Early Arthritis Clinic
@@ -76,27 +73,11 @@
           <router-link to="/links" class="navbar-link">
             Links
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="818" class="navbar-item">
-              News
-            </router-link>
-            <a class="navbar-item">
-              Education
-            </a>
-          </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
           <router-link to="/faqs" class="navbar-link">
             FAQ
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="818" class="navbar-item">
-              News
-            </router-link>
-            <a class="navbar-item">
-              Education
-            </a>
-          </div>
         </div>
       </div>
 

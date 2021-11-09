@@ -1,12 +1,22 @@
 <template>
-<div>
-  <div class="heading1">
-    Referral Form
-  </div>
-  <object data="./cart1.pdf" type="application/pdf" style="height:80vh; width: 80%">
-    <embed src="./cart1.pdf" type="application/pdf" />
-  </object>
-</div>
+    <div class="columns" style="margin: 5px;">
+        <div class="column">
+            <div style="border: 2px solid black; border-radius: 5px;">
+                <div style="display: block; font-size: 25px">CART</div>
+                <object data="./CART.pdf" type="application/pdf" style="height:80vh; width: 95%">
+                    <embed src="./CART.pdf" type="application/pdf" />
+                </object>
+            </div>
+        </div>
+        <div class="column">
+            <div style="border: 2px solid black; border-radius: 5px;">
+                <div style="display: block; font-size: 25px;">STAR</div>
+                <object data="./STAR.pdf" type="application/pdf" style="height:80vh; width: 95%">
+                    <embed src="./STAR.pdf" type="application/pdf" />
+                </object>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -15,7 +25,7 @@ export default {
     return {
     }
   },
-  name: 'Links',
+  name: 'Referrals',
   props: {
   },
   components: {
@@ -23,18 +33,6 @@ export default {
   mounted() {
   },
   methods: {
-    openInNewTab(link) {
-      window.open("http://" + link, '_blank');
-    }
   }
 }
 </script>
-
-<style scoped>
-.heading1{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-</style>
