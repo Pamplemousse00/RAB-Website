@@ -37,10 +37,22 @@
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="/referrals" class="navbar-item">
-              Referrals
+              AREP Referral
+            </router-link>
+            <router-link to="/referrals" class="navbar-item">
+              Rheum Referral
             </router-link>
             <router-link to="/eac" class="navbar-item">
               Early Arthritis Clinic
+            </router-link>
+            <router-link to="/referrals" class="navbar-item">
+              Rapid Access Clinic (hip & knee replacement)
+            </router-link>
+            <router-link to="/referrals" class="navbar-item">
+              Infographics
+            </router-link>
+            <router-link to="/referrals" class="navbar-item">
+              Inflammatory Arthritis Care Map
             </router-link>
           </div>
         </div>
@@ -50,10 +62,13 @@
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="818" class="navbar-item">
-              News
+              Exercises
             </router-link>
-            <a class="navbar-item">
-              Education
+            <a class="navbar-item" href="https://arthritis.ca/support-education/online-learning/eating-well">
+              Diet
+            </a>
+            <a class="navbar-item" href="https://arthritis.ca/treatment/medication/medication-reference-guide">
+              Medications
             </a>
           </div>
         </div>
