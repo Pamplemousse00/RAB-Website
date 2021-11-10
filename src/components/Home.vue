@@ -8,10 +8,18 @@
         <div class="column" style="display: inline-flex">
           <div class="columns">
             <div class="column">
-              <div class="infoContainer" style="background-color: #caa064"><div style="font-size: 25px; padding-top: 10px; color: black; font-weight: bold">What is a Rheumatologist?</div></div>
+              <div class="infoContainer" style="background-color: #caa064">
+                <div class="infoContainerTitle black">What is a Rheumatologist?</div>
+                <div class="infoContainerInfo black">
+                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of arthritis and other diseases of the joints, muscles and bones.  There are over 100 types of arthritis!
+                </div>
+              </div>
             </div>
             <div class="column">
-               <div class="infoContainer" style="background-color: #994593"><div style="font-size: 25px; padding-top: 10px; color: white; font-weight: bold;">What is an ACPAC Therapist?</div></div>
+               <div class="infoContainer" style="background-color: #994593">
+                <div class="infoContainerTitle white">What is an ACPAC Therapist?</div>
+                <div class="infoContainerInfo white">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care.</div>
+               </div>
             </div>
           </div>         
         </div>
@@ -21,10 +29,10 @@
       <h2>Contact Us</h2>
       <div class="columns">
         <div class="column">
-          <div style="background-color: yellow; height: 400px; width: 400px; margin-left: 100px"></div>
+          <div style="background-color: yellow; height: 400px; width: 600px; margin-left: 100px"></div>
         </div>
         <div class="column">
-          <div style="font-size: 40px; color: white; margin-right: 100px; margin-top: 100px;float: left">40 finchgate boulevard <br> phone number etc.</div>
+          <div style="font-size: 40px; color: white; margin-right: 100px; margin-top: 100px;float: left">40 finchgate boulevard suite 314 L6T3J1 <br> phone number etc.</div>
         </div>
       </div>
     </div>
@@ -53,29 +61,3 @@ export default {
   }
 }
 </script>
-
-
-<style scoped>
-h1 {
-  text-align: left;
-  font-size: 20px;
-}
-h2 {
-  font-size: 30px;
-  color: white;
-  font-weight: 600;
-}
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
-}
-.infoContainer{
-  margin-top: 30px;
-  margin-right: 20px;
-  height: 400px;
-  width: 400px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-</style>

@@ -37,7 +37,7 @@
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="/referrals" class="navbar-item">
-              Referrals
+              Referral Forms
             </router-link>
             <router-link to="/eac" class="navbar-item">
               Early Arthritis Clinic
@@ -45,7 +45,7 @@
             <router-link to="/referrals" class="navbar-item">
               Rapid Access Clinic (hip & knee replacement)
             </router-link>
-            <router-link to="/referrals" class="navbar-item">
+            <router-link to="/infographics" class="navbar-item">
               Infographics
             </router-link>
             <router-link to="/referrals" class="navbar-item">
@@ -58,9 +58,9 @@
             For Patients
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="818" class="navbar-item">
+            <a class="navbar-item" href="https://orthoinfo.org/">
               Exercises
-            </router-link>
+            </a>
             <a class="navbar-item" href="https://arthritis.ca/support-education/online-learning/eating-well">
               Diet
             </a>

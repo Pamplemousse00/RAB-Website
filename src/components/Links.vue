@@ -5,7 +5,7 @@
   </div>
   <div class="columns">
     <div class="column" v-for="link in allLinks" :key="link" style="margin-bottom:5px; margin: 10px; width: 200px; display: inline-flex; box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); border: 1px solid #AAAAAA;">
-      <p class="card-header-title" @click="openInNewTab(link.link)" style="cursor:pointer">
+      <p class="card-header-title" @click="openInNewTab(link.link)" style="cursor:pointer; text-align: center">
         {{link.name}}
       </p>
     </div>
@@ -29,7 +29,7 @@ export default {
     return {
       allLinks: [
         { name: "Rheum Info", link: "rheuminfo.com" },
-        { name: "Ortho Info", link: "www.aaos.org" },
+        { name: "Exercises", link: "www.orthoinfo.org" },
         { name: "Arthritis Society", link: "arthritis.ca" },
         
         { name: "How to Find a Family Doctor", link: "www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" },

@@ -27,10 +27,5 @@ export default {
 </script>
 
 <style scoped>
-.heading1{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
+
 </style>

@@ -14,8 +14,9 @@ export default {
     data() {
         return {
             currentIndex: 0,
-            totalImageCount: 3,
-            imageInterval: null
+            totalImageCount: 4,
+            imageInterval: null,
+            delay: 8000
         }
     },
     mounted() {
@@ -58,7 +59,7 @@ export default {
             }
         },
         setupInterval() {
-            this.imageInterval = setInterval(this.timerIncrementIndex, 5000);
+            this.imageInterval = setInterval(this.timerIncrementIndex, this.delay);
         },
         destroyInterval() {
             clearInterval(this.imageInterval);
