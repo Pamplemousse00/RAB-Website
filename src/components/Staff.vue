@@ -1,36 +1,54 @@
 <template>
 <div>
+  <div style="font-size: 40px; margin-left: 100px; text-align: left; margin-bottom: 20px; margin-top: 200px;">
+    Doctors and Allied Health Professionals
+  </div>
+  <div class="columns" style="margin-right: 30px;">
+    <div class="column" v-for="person in doctors" :key="person.name">
+      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
+          <div class="card-content">
+            <div class="content">
+              <img width="150" :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
+            </div>
+          </div>
+        </b-collapse>
+    </div>
+  </div>
+  <div style="font-size: 40px; margin-left: 100px; text-align: left; margin-bottom: 20px;">
+    Medical Office Administrators
+  </div>
+  <div class="columns" style="margin-right: 30px;">
+    <div class="column" v-for="person in moa" :key="person.name">
+      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
+          <div class="card-content">
+            <div class="content">
+              <img :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
+            </div>
+          </div>
+        </b-collapse>
+    </div>
+  </div>
+  
+  <div style="font-size: 40px; margin-left: 100px; text-align: left">
+    Scribes
+  </div>
+  <div class="columns" style="margin-right: 30px; width: 780px;">
+    <div class="column" v-for="person in scribes" :key="person.name">
+      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
+          <div class="card-content">
+            <div class="content">
+              <img :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
+            </div>
+          </div>
+        </b-collapse>
+    </div>
+  </div>
   <div class="heading1">
-    Staff
+    All Staff
   </div>
   <div style="display: flex; justify-content: center">
     <div style="width: 80%; height: 400px; background-color: #FFFF00"></div>
   </div>
-  <div class="columns" style="margin-right: 30px">
-    <div class="column" v-for="person in staff" :key="person.name">
-      <div class="rows">
-        <div class="row">
-          <b-collapse class="card" id="card">
-              <div class="card-content">
-                <div class="content">
-                  <img :src="person.image" height="100" width="100"/><div> {{person.name}} <br> {{person.role}} <br> {{person.description}}</div>
-                </div>
-              </div>
-            </b-collapse>
-        </div>
-        <div class="row" v-for="child in person.children" :key="child.name">
-          <b-collapse class="card" id="card">
-            <div class="card-content">
-              <div class="content">
-                <img :src="child.image" height="100" width="100"/><div> {{child.name}} <br> {{child.role}} <br> {{child.description}}</div>
-              </div>
-            </div>
-          </b-collapse>
-        </div>
-      </div>
-    </div>
-  </div>
-  
 </div>
 </template>
 
@@ -38,84 +56,111 @@
 export default {
   data() {
     return {
-      staff: [
-          {
+      doctors: [
+        {
             name: "Dr. Vandana Ahluwalia",
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/vandana.jpg'),
-            children: [
-              {
-                name: "Minnie Punnia",
-                role: "Medical office administrator",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/minnie.jpg'),
-              },
-              {
-                name: "Dilnoor Siddhu",
-                role: "Medical Scribe",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/dilnoor.jpg'),
-              }
-            ]
-          },
-          {
-            name: "Dr. Tripti Papneja",
-            role: "Rheumatologist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/tripti.jpg'),
-            children: [
-              {
-                name: "Amanda",
-                role: "MOA",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/amanda.jpg'),
-              }
-            ]
-          },
-          {
-            name: "Dr. Raman Joshi",
-            role: "Rheumatologist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/raman.jpg'),
-            children: [
-              {
-                name: "Debbie",
-                role: "MOA",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/debbie.jpg'),
-              }
-            ]
+            color: "#ffccb8"
           },
           {
             name: "Dr. Sangeeta Bajaj",
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/sangeeta.jpg'),
-            children: [
-              {
-                name: "Sandra",
-                role: "MOA",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/sandra.jpg'),
-              }
-            ]
+            color: "#ccffdb"
+            
+          },
+          {
+            name: "Dr. Raman Joshi",
+            role: "Rheumatologist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/raman.jpg'),
+            color: "#cccdff"
+          },
+          {
+            name: "Dr. Tripti Papneja",
+            role: "Rheumatologist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/tripti.jpg'),
+            color: "#f9ffcc"
           },
           {
             name: "Lisa",
             role: "EAC ACPAC therapist?",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/lisa.jpg'),
-            children: []
+            color: "#ffccfd"
           },
           {
             name: "Mercedes",
             role: "Arthritis Society ACPAC therapist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/lisa.jpg'),
-            children: []
-          }
-      ]
+          },
+      ],
+      moa: [
+        {
+          name: "Minnie Punnia",
+          role: "Medical office administrator",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/minnie.jpg'),
+          color: "#ffccb8"
+        },
+        {
+          name: "Sandra Dee",
+          role: "MOA",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/sandra.jpg'),
+           color: "#ccffdb"
+          
+        },
+        {
+          name: "Debbie",
+          role: "MOA",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/debbie.jpg'),
+          color: "#cccdff"
+        },
+        {
+          name: "Amanda Fleury",
+          role: "MOA",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/amanda.jpg'),
+          color: "#f9ffcc"
+        },
+         {
+          name: "Shawn McKinnon",
+          role: "EAC Medical Office Administrator",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/lisa.jpg'),
+          color: "#ffccfd"
+        },
+         {
+          name: "Shawn McKinnon",
+          role: "EAC Medical Office Administrator",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/lisa.jpg'),
+        },
+      ],
+      scribes: [
+        {
+            name: "Dilnoor Siddhu",
+            role: "Medical Scribe",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/dilnoor.jpg'),
+            color: "#ffccb8"
+          },
+          {
+            name: "Jaden Chera",
+            role: "Medical Scribe",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/dilnoor.jpg'),
+            color: "#ffccb8"
+          },
+          
+      ],
     }
   },
   name: 'Links',
@@ -135,15 +180,15 @@ export default {
 
 <style scoped>
 .heading1{
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
 }
 
 #card {
   margin-top: 20px;
   margin-left: 30px;
+  width: 200px;
+  height: 270px;
 }
 
 #card:hover {

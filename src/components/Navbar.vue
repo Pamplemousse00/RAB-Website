@@ -4,8 +4,9 @@
       <img :src="logoSource" width="120" height="100" style="margin-top: 0px; margin-right: -10px;">
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item" style="background-color:white;">
-        <div style="font-size: 30px; color: black">
-        RheumBrampton
+        <div style="font-size: 30px; color: black; line-height: 35px;">
+        Rheumatology <br>
+        Brampton
         </div>
       </router-link>
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
@@ -42,14 +43,23 @@
             <router-link to="/eac" class="navbar-item">
               Early Arthritis Clinic
             </router-link>
-            <router-link to="/referrals" class="navbar-item">
+            <a href="https://www.williamoslerhs.ca/en/areas-of-care/hip-and-knee-joint-osteoarthritis-rapid-access-clinic.aspx" class="navbar-item">
               Rapid Access Clinic (hip & knee replacement)
+            </a>
+            <a href="https://www.lowbackrac.ca/rac-lbp-registration.html" class="navbar-item">
+              Rapid Access Clinic (Low Back Pain)
+            </a>
+            <router-link to="/infographics" class="navbar-item">
+              Could this be Gout?
             </router-link>
             <router-link to="/infographics" class="navbar-item">
-              Infographics
+              Could this be Temporal Arteritis?
             </router-link>
-            <router-link to="/referrals" class="navbar-item">
+            <router-link to="/iacaremap" class="navbar-item">
               Inflammatory Arthritis Care Map
+            </router-link>
+            <router-link to="/links" class="navbar-item">
+              Helpful Links...
             </router-link>
           </div>
         </div>
@@ -58,15 +68,31 @@
             For Patients
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
-            <a class="navbar-item" href="https://orthoinfo.org/">
-              Exercises
-            </a>
             <a class="navbar-item" href="https://arthritis.ca/support-education/online-learning/eating-well">
               Diet
+            </a>
+            <a class="navbar-item" href="https://orthoinfo.org/">
+              Exercises
             </a>
             <a class="navbar-item" href="https://arthritis.ca/treatment/medication/medication-reference-guide">
               Medications
             </a>
+            <a class="navbar-item" href="arthritis.ca">
+              Arthritis Society
+            </a>
+            <a class="navbar-item" href="arthritis.ca">
+              Rheum Info
+            </a>
+            <a class="navbar-item" href="www.ontario.ca/page/find-family-doctor-or-nurse-practitioner">
+              How to Find a Family Doctor
+            </a>
+            <a class="navbar-item" href="https://www.peelregion.ca/health/">
+              Region of Peel Health Services
+            </a>
+            <a class="navbar-item" href="www.williamoslerhs.ca">
+              William Osler Health System
+            </a>
+            
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -100,7 +126,7 @@ export default {
     return {
       showNav: false,
       name: '',
-      logoSource: require('@/assets/images/tempLogo.jpg'),
+      logoSource: require('@/assets/images/logooo.jpg'),
     }
   },
   methods: {

@@ -16,7 +16,7 @@
               </div>
             </div>
             <div class="column">
-               <div class="infoContainer" style="background-color: #994593">
+               <div class="infoContainer" style="background-color: #994593" @click="$router.push('/eac')">
                 <div class="infoContainerTitle white">What is an ACPAC Therapist?</div>
                 <div class="infoContainerInfo white">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care.</div>
                </div>
@@ -26,13 +26,15 @@
       </div>
     </div>
     <div class="row" style="margin-top: 80px; height: 500px; background-color: #caa064">
-      <h2>Contact Us</h2>
+      <div style="font-size: 40px; color: white">Contact Us</div>
       <div class="columns">
         <div class="column">
-          <div style="background-color: yellow; height: 400px; width: 600px; margin-left: 100px"></div>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?markers=40 finchgate blvd. Brampton&zoom=14&size=600x400&key=AIzaSyCHuAPjPIDJWD3PqjjWWpNiRdEQlifTEMc
+" style="margin-left: 100px" />
         </div>
         <div class="column">
-          <div style="font-size: 40px; color: white; margin-right: 100px; margin-top: 100px;float: left">40 finchgate boulevard suite 314 L6T3J1 <br> phone number etc.</div>
+          <div style="font-size: 40px; color: white; margin-right: 100px; margin-top: 20px; display: block;">Suite 314-40 Finchgate Blvd.  L6T3J1 <br> 905-799-1850</div>
+          <div style="font-size: 25px; color: white; text-align: left; display: block; display: block;">Dr. V. Ahluwalia: EXT-221<br>Dr. S. Bajaj: EXT-231<br>Dr. R. Joshi: EXT-251<br> Dr. T. Papneja: EXT-261<br> Early Arthritis Clinic: EXT-240</div>
         </div>
       </div>
     </div>
@@ -43,6 +45,9 @@
   </div>
 </template>
 
+
+
+
 <script>
 import Slideshow from './slideshow.vue'
 export default {
@@ -52,12 +57,11 @@ export default {
   components: {
     Slideshow,
   },
-  mounted() {
-  },
   methods: {
     getImageSrc() {
       return require('@/assets/images/map.jpg');
-    }
+    },
+    
   }
 }
 </script>

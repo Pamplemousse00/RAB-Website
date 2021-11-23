@@ -8,6 +8,7 @@ import Philanthropy from './components/Philanthropy.vue'
 import Staff from './components/Staff.vue'
 import Referrals from './components/Referrals.vue'
 import Infographics from './components/Infographics.vue'
+import IACareMap from './components/IACareMap.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/infographics',
       name: 'Infographics',
       component: Infographics
+    },
+    {
+      path: '/iacaremap',
+      name: 'IA Care Map',
+      component: IACareMap
     },
   ]
 })

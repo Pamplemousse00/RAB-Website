@@ -25,6 +25,7 @@ h2 {
   width: 400px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  cursor: pointer;
 }
 .infoContainerTitle{
 font-size: 25px;
@@ -47,5 +48,6 @@ font-weight: bold;
   font-size: 30px;
   text-align: center;
   margin-top: 50px;
+  padding-top: 20px;
   margin-bottom: 20px;
 }
