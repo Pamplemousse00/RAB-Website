@@ -1,7 +1,7 @@
 <template>
-<div>
+<div style="padding-left: 100px;">
   <div style="font-size: 40px; margin-left: 100px; text-align: left; margin-bottom: 20px; margin-top: 200px;">
-    Doctors and Allied Health Professionals
+    Doctors
   </div>
   <div class="columns" style="margin-right: 30px;">
     <div class="column" v-for="person in doctors" :key="person.name">
@@ -41,6 +41,27 @@
             </div>
           </div>
         </b-collapse>
+    </div>
+  </div>
+  <div style="font-size: 40px; margin-left: 100px; text-align: left">
+    Allied Health Professionals
+  </div>
+  <div class="columns" style="margin-right: 30px; width: 780px;">
+    <div class="column" v-for="person in ahp" :key="person.name">
+      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
+        <div class="card-content">
+          <div class="content">
+            <img :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
+          </div>
+        </div>
+      </b-collapse>
+      <b-collapse class="card" id="card" :style="'background-color: '+person.color" v-for="child in person.children" :key="child.name">
+        <div class="card-content">
+          <div class="content">
+            <img :src="child.image"/><div> {{child.name}} <br> {{child.role}}</div>
+          </div>
+        </div>
+      </b-collapse>
     </div>
   </div>
   <div class="heading1">
@@ -86,19 +107,6 @@ export default {
             image: require('@/assets/images/staff/tripti.jpg'),
             color: "#f9ffcc"
           },
-          {
-            name: "Lisa",
-            role: "EAC ACPAC therapist?",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/lisa.jpg'),
-            color: "#ffccfd"
-          },
-          {
-            name: "Mercedes",
-            role: "Arthritis Society ACPAC therapist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/lisa.jpg'),
-          },
       ],
       moa: [
         {
@@ -130,19 +138,6 @@ export default {
           image: require('@/assets/images/staff/amanda.jpg'),
           color: "#f9ffcc"
         },
-         {
-          name: "Shawn McKinnon",
-          role: "EAC Medical Office Administrator",
-          description: "Lorem ipsum dolor di amet whatever.",
-          image: require('@/assets/images/staff/lisa.jpg'),
-          color: "#ffccfd"
-        },
-         {
-          name: "Shawn McKinnon",
-          role: "EAC Medical Office Administrator",
-          description: "Lorem ipsum dolor di amet whatever.",
-          image: require('@/assets/images/staff/lisa.jpg'),
-        },
       ],
       scribes: [
         {
@@ -156,11 +151,49 @@ export default {
             name: "Jaden Chera",
             role: "Medical Scribe",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/dilnoor.jpg'),
+            image: require('@/assets/images/staff/jaden.jpg'),
             color: "#ffccb8"
+          },          
+      ],
+      ahp: [
+        {
+            name: "Lisa Denning",
+            role: "EAC ACPAC therapist?",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/lisa.jpg'),
+            color: "#ffccfd",
+            children: [
+              {
+                name: "Shawn McKinnon",
+                role: "EAC Medical Office Administrator",
+                description: "Lorem ipsum dolor di amet whatever.",
+                image: require('@/assets/images/staff/shawn.jpg'),
+                color: "#ffccfd"
+              },
+            ]
+          },
+          {
+            name: "Mercedes Reeb",
+            role: "Arthritis Society ACPAC therapist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/silhouette.jpg'),
+          },
+          {
+            name: "Kerri Ryan",
+            role: "Foot Specialist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/silhouette.jpg'),
+            children: [
+              {
+                name: "Natalie",
+                role: "idk",
+                description: "Lorem ipsum dolor di amet whatever.",
+                image: require('@/assets/images/staff/silhouette.jpg'),
+              },
+            ]
           },
           
-      ],
+      ]
     }
   },
   name: 'Links',
