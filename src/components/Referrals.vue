@@ -5,8 +5,7 @@
         <div class="column">
           <div style="text-align: left; border: 1px solid black; padding-left: 20px; margin-bottom: 10px; border-radius: 5px; font-size: 20px;">Use this form for referral to the Early Arthritis Clinic. For criteria, click <a>here.</a></div>
             <div style="border: 2px solid black; border-radius: 10px;">
-                <div class="pdfHeader">Early Arthritis Clinic Referral Form</div>
-                <div>Please see criteria here</div>
+                <div class="pdfHeader">Early Arthritis Clinic (EAC) Referral Form</div>
                 <object data="./CART.pdf" type="application/pdf" style="height:80vh; width: 95%">
                     <embed src="./CART.pdf" type="application/pdf" />
                 </object>

@@ -14,7 +14,8 @@
 The goal is to facilitate early assessment of IA and to enable rapid confirmation of diagnosis and initiation of 
 disease-modifying, anti-rheumatic drugs.
 
-Referrals for the EAC should be made on the CART form (click <a>here</a>). Other referral forms will not be accepted.
+Referrals for the EAC should be made on the EAC Referral Form (click <a>here</a>).
+Other referral forms will not be accepted.
        
 Criteria for Suspected Diagnosis of Rheumatoid Arthritis (for at least 6 weeks):
 
@@ -53,7 +54,7 @@ A patient is a candidate for referral to the EAC if they satisfy at least 4 of t
             40 Finchgate Blvd. Suite 314 <br>
 
         Phone: 905-799-1850 EXT. ?<br> FAX: ?<br>
-        For CART Referral Form click <a>here</a>.
+        For EAC Referral Form click <a>here</a>.
           </div>
         </div>
       </div>

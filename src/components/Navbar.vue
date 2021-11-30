@@ -29,17 +29,50 @@
             <router-link to="/Philanthropy" class="navbar-item">
               Philanthropy
             </router-link>
-            
           </div>
         </div>
+
         <div class="navbar-item has-dropdown is-hoverable">
           <router-link to="818" class="navbar-link">
             For Physicians
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="/referrals" class="navbar-item">
-              Referral Forms
+              Referrals
             </router-link>
+
+
+            <div class="navbar-dropdown">
+              <div class="nested navbar-item dropdown">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>Dropdown button</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                      Dropdown item
+                    </a>
+                    <a class="dropdown-item">
+                      Other dropdown item
+                    </a>
+                    <a href="#" class="dropdown-item is-active">
+                      Active dropdown item
+                    </a>
+                    <a href="#" class="dropdown-item">
+                      Other dropdown item
+                    </a>
+                    <hr class="dropdown-divider">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
             <router-link to="/eac" class="navbar-item">
               Early Arthritis Clinic
             </router-link>
@@ -144,7 +177,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 nav.navbar {
   margin-bottom: 1rem;
 }
@@ -154,5 +187,30 @@ nav.navbar {
 .navbar-item, .navbar-link {
   font-size: 22px;
   font-weight: 700;
+}
+
+.nested.dropdown {
+  &:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    top: -15px;
+    margin-left: 100%;
+  }
+  .dropdown-trigger {
+    button::after {
+      content: '⦠'
+    }
+    button {
+      padding: 0px 0px;
+      border: 0px;
+      font-size: 22px;
+      font-weight: 700;
+      height: 2em;
+    }
+  }
+  .dropdown-content{
+    font-size: 22px;
+  }
 }
 </style>
