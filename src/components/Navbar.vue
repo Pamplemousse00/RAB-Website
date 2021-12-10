@@ -1,15 +1,11 @@
 <template>
   <nav class="navbar is-dark is-fixed-top" style="background-color: #994593">
-    <div class="container">
-      <img :src="logoSource" width="120" height="100" style="margin-top: 0px; margin-right: -10px;">
-    <div class="navbar-brand">
-      <router-link to="/" class="navbar-item" style="background-color:white;">
-        <div style="font-size: 30px; color: black; line-height: 35px;">
-        Rheumatology <br>
-        Brampton
-        </div>
-      </router-link>
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <div class="navbar-brand">
+        <div class="logo" @click="$router.push('/')">
+          <img :src="logoSource" style="height: 80px; display: inline; margin: 10px;">
+          <img :src="titleSource" style="height: 80px; display: inline; margin: 10px;">
+      </div>
+      <div class="navbar-burger burger" data-target="navMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -37,56 +33,33 @@
             For Physicians
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
-            <router-link to="/referrals" class="navbar-item">
-              Referrals
-            </router-link>
 
-
-            <div class="navbar-dropdown">
-              <div class="nested navbar-item dropdown">
-                <div class="dropdown-trigger">
-                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>Dropdown button</span>
-                    <span class="icon is-small">
-                      <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                  </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                  <div class="dropdown-content">
-                    <a href="#" class="dropdown-item">
-                      Dropdown item
-                    </a>
-                    <a class="dropdown-item">
-                      Other dropdown item
-                    </a>
-                    <a href="#" class="dropdown-item is-active">
-                      Active dropdown item
-                    </a>
-                    <a href="#" class="dropdown-item">
-                      Other dropdown item
-                    </a>
-                    <hr class="dropdown-divider">
+                <div class="nested navbar-item dropdown" style="padding: 0px;">
+                  <div class="dropdown-trigger" style="width: 100%">
+                    <router-link to="/referrals" class="navbar-item">
+                      Referrals
+                    </router-link>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                      <router-link to="/referrals" class="navbar-item">
+                        Office
+                      </router-link>
+                      <router-link to="/eac" class="navbar-item">
+                        Early Arthritis Clinic
+                      </router-link>
+                      <a href="https://www.williamoslerhs.ca/en/areas-of-care/hip-and-knee-joint-osteoarthritis-rapid-access-clinic.aspx" target="_blank" class="navbar-item">
+                        Rapid Access Clinic (hip & knee replacement)
+                      </a>
+                      <a href="https://www.lowbackrac.ca/rac-lbp-registration.html" target="_blank" class="navbar-item">
+                        Rapid Access Clinic (Low Back Pain)
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-
-            <router-link to="/eac" class="navbar-item">
-              Early Arthritis Clinic
-            </router-link>
-            <a href="https://www.williamoslerhs.ca/en/areas-of-care/hip-and-knee-joint-osteoarthritis-rapid-access-clinic.aspx" class="navbar-item">
-              Rapid Access Clinic (hip & knee replacement)
-            </a>
-            <a href="https://www.lowbackrac.ca/rac-lbp-registration.html" class="navbar-item">
-              Rapid Access Clinic (Low Back Pain)
-            </a>
             <router-link to="/infographics" class="navbar-item">
-              Could this be Gout?
-            </router-link>
-            <router-link to="/infographics" class="navbar-item">
-              Could this be Temporal Arteritis?
+              Gout & IA Clinical Pearls
             </router-link>
             <router-link to="/iacaremap" class="navbar-item">
               Inflammatory Arthritis Care Map
@@ -110,6 +83,7 @@
             <a class="navbar-item" href="https://arthritis.ca/treatment/medication/medication-reference-guide">
               Medications
             </a>
+            <hr class="dropdown-divider">
             <a class="navbar-item" href="arthritis.ca">
               Arthritis Society
             </a>
@@ -128,16 +102,9 @@
             
           </div>
         </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="/links" class="navbar-link">
-            Links
-          </router-link>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="/faqs" class="navbar-link">
+          <router-link to="/faqs" class="navbar-item">
             FAQ
           </router-link>
-        </div>
       </div>
 
       <div class="navbar-end">
@@ -146,7 +113,6 @@
           </b-input>
         </div>
       </div>
-    </div>
     </div>
   </nav>
 
@@ -159,7 +125,8 @@ export default {
     return {
       showNav: false,
       name: '',
-      logoSource: require('@/assets/images/logooo.jpg'),
+      logoSource: require('@/assets/images/logo.png'),
+      titleSource: require('@/assets/images/title.png'),
     }
   },
   methods: {
@@ -187,6 +154,7 @@ nav.navbar {
 .navbar-item, .navbar-link {
   font-size: 22px;
   font-weight: 700;
+  min-height: 60px;
 }
 
 .nested.dropdown {
@@ -197,20 +165,27 @@ nav.navbar {
     top: -15px;
     margin-left: 100%;
   }
-  .dropdown-trigger {
-    button::after {
-      content: '⦠'
-    }
-    button {
-      padding: 0px 0px;
-      border: 0px;
-      font-size: 22px;
-      font-weight: 700;
-      height: 2em;
-    }
-  }
-  .dropdown-content{
+  .dropdown-item{
     font-size: 22px;
+    font-weight: 700px;
   }
 }
+@media only screen and (max-width: 770px) {
+  .nested.dropdown {
+    visibility: visible;
+    .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      top: -15px;
+      margin-left: 100%;
+      visibility: visible;
+    }
+    .dropdown-item{
+      font-size: 22px;
+      font-weight: 700px;
+    }
+  }
+}
+
 </style>

@@ -111,14 +111,14 @@ export default {
       moa: [
         {
           name: "Minnie Punnia",
-          role: "Medical office administrator",
+          role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/minnie.jpg'),
           color: "#ffccb8"
         },
         {
           name: "Sandra Dee",
-          role: "MOA",
+          role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/sandra.jpg'),
            color: "#ccffdb"
@@ -126,14 +126,14 @@ export default {
         },
         {
           name: "Debbie",
-          role: "MOA",
+          role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/debbie.jpg'),
           color: "#cccdff"
         },
         {
           name: "Amanda Fleury",
-          role: "MOA",
+          role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/amanda.jpg'),
           color: "#f9ffcc"
@@ -157,8 +157,8 @@ export default {
       ],
       ahp: [
         {
-            name: "Lisa Denning",
-            role: "EAC ACPAC therapist?",
+            name: "Lisa Denning, PT",
+            role: "Early Arthritis Clinic ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/lisa.jpg'),
             color: "#ffccfd",
@@ -173,8 +173,8 @@ export default {
             ]
           },
           {
-            name: "Mercedes Reeb",
-            role: "Arthritis Society ACPAC therapist",
+            name: "Mercedes Reeb, OT",
+            role: "Arthritis Society ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/silhouette.jpg'),
           },

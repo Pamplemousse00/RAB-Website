@@ -1,3 +1,22 @@
+.slideshowButton{
+  margin: 10px;
+  padding-top: 20px;
+  width: 50px;
+  height: 90%;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideshowContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 500px;
+  width: 100%;
+}
 .pdfHeader{
   display: block;
   font-size: 25px;
@@ -21,8 +40,9 @@ h2 {
 .infoContainer{
   margin-top: 30px;
   margin-right: 20px;
-  height: 400px;
-  width: 400px;
+  margin-left: 20px;
+  min-height: 400px;
+  max-width: 400px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   cursor: pointer;
@@ -39,9 +59,10 @@ font-weight: bold;
   color: black;
 }
 .infoContainerInfo{
-  font-size: 23px; 
+  font-size: 25px; 
   margin: 40px 20px 10px 20px; 
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .heading1{
@@ -50,4 +71,46 @@ font-weight: bold;
   margin-top: 50px;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+.googleMap {
+  margin-left: 100px;
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+  padding-bottom: 50px;
+}
+.address{
+  font-size: 35px;
+  color: white;
+  padding-bottom: 20px;
+}
+.phoneNumbers{
+  font-size: 25px;
+  color: white;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+  .infoContainerInfo{
+    font-size: 25px;
+  }
+  .slideshowContainer{
+    height: 300px;
+  }
+  .googleMap {
+    margin-left: 0px;
+  }
+  .phoneNumbers{
+    margin-left: 20px;
+  }
 }

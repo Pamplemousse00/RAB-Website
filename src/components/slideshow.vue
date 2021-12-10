@@ -1,12 +1,22 @@
 <template>
-    <div>
-        <b-button icon-right="arrow-left" style="display: inline; margin-top: 25%; margin-right: 10px;" v-on:click="decrementIndex"/>
-        <img v-bind:src="getImageSrc" style="display: inline; width: 80%; height: 400px">
-        <b-button icon-right="arrow-right" style="display: inline; margin-top: 25%; margin-left: 10px;" v-on:click="incrementIndex"/>
-        <div style="margin-top: 20px;"> 
-            <div :style="currentIndex == element - 1 ? 'background-color: #FF0000' : 'background-color: #000000'" style="width: 10px; height: 10px; margin: 5px; display: inline-block;" v-for="element in totalImageCount + 1" v-bind:key="element" v-on:click="setIndex(element - 1)"></div>
-        </div>
+  <div>
+    <div style="display: flex; align-items: center;">
+        
+          <div class="slideshowContainer">
+            <div class="slideshowButton" v-on:click="decrementIndex">
+              <b-icon icon="arrow-left" class="slideshowIcon"/>
+            </div>
+            <img v-bind:src="getImageSrc" style="width: 80%; min-width: 300px; height: auto">
+            <div class="slideshowButton" v-on:click="incrementIndex">
+              <b-icon icon="arrow-right" class="slideshowIcon"/>
+            </div>
+          </div>
+        
     </div>
+    <div style="margin-top: 20px;"> 
+        <div :style="currentIndex == element - 1 ? 'background-color: #caa064' : 'background-color: #000000'" style="width: 10px; height: 10px; margin: 5px; display: inline-block;" v-for="element in totalImageCount + 1" v-bind:key="element" v-on:click="setIndex(element - 1)"></div>
+    </div>
+  </div>
 </template>
 
 <script>

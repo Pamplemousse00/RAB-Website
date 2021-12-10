@@ -5,57 +5,55 @@
   </div>
   <div class="columns">
     <div class="column">
-  <pre style="text-align: left; margin-left: 10%; font-family: calibri; font-size: 18px; background-color: #FFFFFF">
-    <div style="font-size: 25px;">Early Arthritis Centre will see patients with:</div>
-•	Suspected Inflammatory Arthritis (IA)
-•	This clinic provides adult-only rheumatology services and will not screen pediatric cases
+      <div class="content is-medium" style="text-align: left; margin-left: 30px">
+          <h1>Early Arthritis Centre will see patients with:</h1>
 
+          <li>Suspected Inflammatory Arthritis (IA)</li>
+          <li>This clinic provides adult-only rheumatology services and will not screen pediatric cases</li>
 
-The goal is to facilitate early assessment of IA and to enable rapid confirmation of diagnosis and initiation of 
-disease-modifying, anti-rheumatic drugs.
+          <br>
+          <p>The goal is to facilitate early assessment of IA and to enable rapid confirmation of diagnosis and initiation of 
+          disease-modifying, anti-rheumatic drugs.</p>
 
-Referrals for the EAC should be made on the EAC Referral Form (click <a>here</a>).
-Other referral forms will not be accepted.
-       
-Criteria for Suspected Diagnosis of Rheumatoid Arthritis (for at least 6 weeks):
-
-    1.	Morning stiffness greater than 30 minutes
-    2.	At least three swollen joints                                        
-    3.	One swollen joint in the hand                                      
-    4.	Multiple Large Joint swelling
-    5.	Symmetrical Arthritis
-    6.	Positive Rheumatoid Factor or CCP Ab (Cyclic Citrullinated Peptide Antibody)
-    7.	Rheumatoid nodules
-    8.	Erosion on X-rays
-    9.	Elevated ESR or CRP
-A patient is a candidate for referral to the EAC if they satisfy at least 4 of the 9 above criteria.
-  </pre>
-    
-  <div class="heading1">
-    Criteria
-  </div>
-  <div class="heading1">
-    Process
-  </div>
-  <div class="heading1">
-    About / Location
-  </div>
-  </div>
-  <div class="column">
-      <div class="rows" style="float: right; margin-right: 20px">
-        <div class="row">
-          <div style="width: 400px; height: 200px; border: 1px solid black; border-radius: 5px; font-size: 20px; cursor:pointer; margin-bottom: 20px;" @click="openInNewTab('www.williamoslerhs.ca/en/areas-of-care/rheumatology-early-arthritis-clinic.aspx')"><img src="../assets/wohslogo.jpg"/> <div style="margin-top: -20px">Early Arthritis Clinic Info <br>CLICK HERE</div></div>
+          <p>Referrals for the EAC should be made on the EAC Referral Form (click <router-link to="/referrals" style="color:blue">here</router-link>).</p>
+          <p>Other referral forms will not be accepted.</p>
+                
+          <p>Criteria for Suspected Diagnosis of Rheumatoid Arthritis (for at least 6 weeks):</p>
+            <ol>
+              <li>Morning stiffness greater than 30 minutes</li>
+              <li>At least three swollen joints</li>
+              <li>One swollen joint in the hand</li>
+              <li>Multiple Large Joint swelling</li>
+              <li>Symmetrical Arthritis</li>
+              <li>Positive Rheumatoid Factor or CCP Ab (Cyclic Citrullinated Peptide Antibody)</li>
+              <li>Rheumatoid nodules</li>
+              <li>Erosion on X-rays</li>
+              <li>Elevated ESR or CRP</li>
+            </ol>
+          <p>A patient is a candidate for referral to the EAC if they satisfy at least 4 of the 9 above criteria.</p>
+            <div style="border: 1px solid black; border-radius: 5px; font-size: 20px; cursor:pointer; margin-top: 20px; max-width: 400px" @click="openInNewTab('www.williamoslerhs.ca/en/areas-of-care/rheumatology-early-arthritis-clinic.aspx')"><img src="../assets/wohslogo.jpg" style="margin-bottom: -20px"/> <div style="margin-bottom: 10px; text-align: center">Early Arthritis Clinic Info <br>CLICK HERE</div></div>
         </div>
+  </div>
+  <div class="column is-one-third">
+      <div class="rows" style="float: right; margin-right: 20px; width: 100%">
+        
         <div class="row">
-          <div style="width: 400px; border: 1px solid black; border-radius: 5px;font-size: 23px;">
-            <div style="font-size: 25px">
+          <div style="border: 1px solid black; border-radius: 5px;font-size: 23px; margin-bottom: 20px">
+            <div style="font-size: 25px; padding-bottom: 10px;">
               Location / Contact Us:  </div>
               RELOCATED TO: <br>
             40 Finchgate Blvd. Suite 314 <br>
 
         Phone: 905-799-1850 EXT. ?<br> FAX: ?<br>
-        For EAC Referral Form click <a>here</a>.
           </div>
+        </div>
+        <div class="row">
+            <div style="border: 2px solid black; border-radius: 10px;">
+                <div class="pdfHeader">EAC Referral Form</div>
+                <object data="./cart.pdf" type="application/pdf" style="height:80vh; width: 95%">
+                    <embed src="./cart.pdf" type="application/pdf" />
+                </object>
+            </div>
         </div>
       </div>
     </div>
