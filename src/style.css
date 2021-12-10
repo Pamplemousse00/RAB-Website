@@ -79,6 +79,7 @@ font-weight: bold;
   height: auto;
   max-width: 600px;
   padding-bottom: 50px;
+  cursor: pointer;
 }
 .address{
   font-size: 35px;
@@ -113,4 +114,11 @@ font-weight: bold;
   .phoneNumbers{
     margin-left: 20px;
   }
+}
+
+@media only screen and (max-width: 1900px) {
+  .infoContainerInfo{
+    font-size: 22px;
+  }
+
 }

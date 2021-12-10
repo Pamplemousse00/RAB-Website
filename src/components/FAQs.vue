@@ -3,7 +3,7 @@
   <div class="heading1">
     Frequently Asked Questions
   </div>
-    <b-collapse class="card" animation="slide" v-for="question in allFAQs" :key="question.question">
+    <b-collapse class="card" animation="slide" v-for="question in allFAQs" :key="question.question" :open="!isMobile">
             <template #trigger="props">
                 <div
                     class="card-header"
@@ -90,7 +90,8 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
           question: "COVID-19 Vaccination Booster.",
           answer: "A doctors note is <b>not</b> required. If you are on any of the medications listed <a href='https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_third_dose_recommendations.pdf'>HERE</a>, bring them to the immunization centre to receive your third dose."
         },
-      ]
+      ],
+      isMobile: false,
     }
   },
   name: 'FAQs',
@@ -99,6 +100,8 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
   components: {
   },
   mounted() {
+    this.isMobile = visualViewport.width < 770 ? true : false
+    console.log(visualViewport.width)
   },
   methods: {
   }

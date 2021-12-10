@@ -15,7 +15,7 @@
     <div id="navMenu" class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
       <div class="navbar-start" v-on:click="condToggle">
         <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="About" class="navbar-link">
+          <router-link to="/staff" class="navbar-link">
             About Us
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="818" class="navbar-link">
+          <router-link to="/referrals" class="navbar-link">
             For Physicians
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
-          <router-link to="818" class="navbar-link">
+          <router-link to="/" class="navbar-link">
             For Patients
           </router-link>
           <div class="navbar-dropdown is-boxed is-dark">

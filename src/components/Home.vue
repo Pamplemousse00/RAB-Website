@@ -29,7 +29,7 @@
       <div style="font-size: 40px; color: white">Contact Us</div>
       <div class="columns">
         <div class="column">
-          <img class="googleMap" @click="openInNewTab('https://www.google.ca/maps/place/40+Finchgate+Blvd,+Brampton,+ON+L6T+3H9/@43.7280689,-79.714262,17z')" src="https://maps.googleapis.com/maps/api/staticmap?zoom=15&markers=40 finchgate blvd. Brampton&zoom=14&size=600x400&key=AIzaSyCHuAPjPIDJWD3PqjjWWpNiRdEQlifTEMc" />
+          <img class="googleMap" @click="openInNewTab('https://www.google.ca/maps/place/40+Finchgate+Blvd,+Brampton,+ON+L6T+3H9/@43.7280689,-79.714262,17z')" :src="getGoogleMapSrc()" />
         </div>
         <div class="column">
           <div class="address">
@@ -61,9 +61,9 @@ export default {
     Slideshow,
   },
   methods: {
-    getImageSrc() {
-      return require('@/assets/images/map.jpg');
-    },    
+    getGoogleMapSrc(){
+      return require('@/assets/images/googleMap.png');
+    },
     openInNewTab(link) {
       window.open(link, '_blank');
     }
