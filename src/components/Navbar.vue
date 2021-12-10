@@ -3,7 +3,7 @@
       <div class="navbar-brand">
         <div class="logo" @click="$router.push('/')">
           <img :src="logoSource" style="height: 80px; display: inline; margin: 10px;">
-          <img :src="titleSource" style="height: 80px; display: inline; margin: 10px;">
+          <img :src="titleSource" style="max-width: 300px; display: inline; margin: 10px;">
       </div>
       <div class="navbar-burger burger" data-target="navMenu">
         <span></span>
@@ -18,7 +18,7 @@
           <router-link to="/staff" class="navbar-link">
             About Us
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark">
+          <div class="navbar-dropdown is-boxed is-dark" style="visibility: visible;">
             <router-link to="/staff" class="navbar-item">
               Staff
             </router-link>
@@ -32,7 +32,7 @@
           <router-link to="/referrals" class="navbar-link">
             For Physicians
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark">
+          <div class="navbar-dropdown is-boxed is-dark" style="visibility: visible;">
 
                 <div class="nested navbar-item dropdown" style="padding: 0px;">
                   <div class="dropdown-trigger" style="width: 100%">
@@ -73,7 +73,7 @@
           <router-link to="/" class="navbar-link">
             For Patients
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark">
+          <div class="navbar-dropdown is-boxed is-dark" style="visibility: visible;">
             <a class="navbar-item" href="https://arthritis.ca/support-education/online-learning/eating-well">
               Diet
             </a>
@@ -139,6 +139,9 @@ export default {
       if (this.showNav) {
         this.toggle()
       }
+    },
+    resize() {
+      
     }
   }
 }

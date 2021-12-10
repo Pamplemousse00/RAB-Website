@@ -91,7 +91,7 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
           answer: "A doctors note is <b>not</b> required. If you are on any of the medications listed <a href='https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_third_dose_recommendations.pdf'>HERE</a>, bring them to the immunization centre to receive your third dose."
         },
       ],
-      isMobile: false,
+      isMobile: true,
     }
   },
   name: 'FAQs',

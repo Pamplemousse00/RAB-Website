@@ -60,5 +60,8 @@ export default new Router({
       name: 'IA Care Map',
       component: IACareMap
     },
-  ]
+  ],
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 })
