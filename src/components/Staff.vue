@@ -1,67 +1,56 @@
 <template>
-<div style="padding-left: 100px;">
-  <div style="font-size: 40px; margin-left: 100px; text-align: left; margin-bottom: 20px; margin-top: 200px;">
+<div style="margin-left: 20px; margin-right: 20px;">
+  <div class="staffHeading">
     Doctors
   </div>
-  <div class="columns" style="margin-right: 30px;">
-    <div class="column" v-for="person in doctors" :key="person.name">
-      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
-          <div class="card-content">
-            <div class="content">
-              <img width="150" :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
-            </div>
-          </div>
-        </b-collapse>
+  <div class="columns">
+    <div class="column" v-for="person in doctors" :key="person.name" style="display: flex; justify-content: center;">
+      <div class="staffCard" :style="'background-color: '+person.color">
+        <div class="centered">
+          <img :src="person.image" style="border-radius: 5px"/>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
+        </div>
+      </div>
     </div>
   </div>
-  <div style="font-size: 40px; margin-left: 100px; text-align: left; margin-bottom: 20px;">
+  <div class="staffHeading">
     Medical Office Administrators
   </div>
-  <div class="columns" style="margin-right: 30px;">
-    <div class="column" v-for="person in moa" :key="person.name">
-      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
-          <div class="card-content">
-            <div class="content">
-              <img :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
-            </div>
-          </div>
-        </b-collapse>
+    <div class="columns">
+    <div class="column" v-for="person in moa" :key="person.name" style="display: flex; justify-content: center;">
+      <div class="staffCard" :style="'background-color: '+person.color">
+        <div class="centered">
+          <img :src="person.image" style="border-radius: 5px"/>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
+        </div>
+      </div>
     </div>
   </div>
   
-  <div style="font-size: 40px; margin-left: 100px; text-align: left">
+  <div class="staffHeading">
     Scribes
   </div>
-  <div class="columns" style="margin-right: 30px; width: 780px;">
-    <div class="column" v-for="person in scribes" :key="person.name">
-      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
-          <div class="card-content">
-            <div class="content">
-              <img :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
-            </div>
-          </div>
-        </b-collapse>
+    <div class="columns">
+    <div class="column" v-for="person in scribes" :key="person.name" style="display: flex; justify-content: center;">
+      <div class="staffCard" :style="'background-color: '+person.color">
+        <div class="centered">
+          <img :src="person.image" style="border-radius: 5px"/>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
+        </div>
+      </div>
     </div>
   </div>
-  <div style="font-size: 40px; margin-left: 100px; text-align: left">
+  <div class="staffHeading">
     Allied Health Professionals
   </div>
-  <div class="columns" style="margin-right: 30px; width: 780px;">
-    <div class="column" v-for="person in ahp" :key="person.name">
-      <b-collapse class="card" id="card" :style="'background-color: '+person.color">
-        <div class="card-content">
-          <div class="content">
-            <img :src="person.image"/><div> {{person.name}} <br> {{person.role}}</div>
-          </div>
+    <div class="columns">
+    <div class="column" v-for="person in ahp" :key="person.name" style="display: flex; justify-content: center;">
+      <div class="staffCard" :style="'background-color: '+person.color">
+        <div class="centered">
+          <img :src="person.image" style="border-radius: 5px"/>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
         </div>
-      </b-collapse>
-      <b-collapse class="card" id="card" :style="'background-color: '+person.color" v-for="child in person.children" :key="child.name">
-        <div class="card-content">
-          <div class="content">
-            <img :src="child.image"/><div> {{child.name}} <br> {{child.role}}</div>
-          </div>
-        </div>
-      </b-collapse>
+      </div>
     </div>
   </div>
   <div class="heading1">
@@ -157,20 +146,18 @@ export default {
       ],
       ahp: [
         {
-            name: "Lisa Denning, PT",
-            role: "Early Arthritis Clinic ACPAC Therapist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/lisa.jpg'),
-            color: "#ffccfd",
-            children: [
-              {
                 name: "Shawn McKinnon",
                 role: "EAC Medical Office Administrator",
                 description: "Lorem ipsum dolor di amet whatever.",
                 image: require('@/assets/images/staff/shawn.jpg'),
                 color: "#ffccfd"
               },
-            ]
+        {
+            name: "Lisa Denning, PT",
+            role: "Early Arthritis Clinic ACPAC Therapist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/lisa.jpg'),
+            color: "#ffccfd",
           },
           {
             name: "Mercedes Reeb, OT",
@@ -184,14 +171,15 @@ export default {
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/silhouette.jpg'),
             children: [
-              {
+              
+            ]
+          },
+          {
                 name: "Natalie",
                 role: "idk",
                 description: "Lorem ipsum dolor di amet whatever.",
                 image: require('@/assets/images/staff/silhouette.jpg'),
               },
-            ]
-          },
           
       ]
     }

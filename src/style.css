@@ -101,7 +101,47 @@ font-weight: bold;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 770px) {
+.staffCard{
+  border-radius: 5px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.2);
+  max-width: 230px;
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+
+.staffCardText{
+  padding: 0px 10px 10px 0px;
+  font-size: 16px;
+}
+
+.staffHeading{
+  font-size: 40px;
+  margin-left: 80px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 770px){
+  .staffCard{
+    margin-left: 0px;
+
+  }
+  .staffCardText{
+    font-size: 20px;
+  }
+  .staffHeading{
+    font-size: 40px;
+    margin-left: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1000px) {
   .infoContainerInfo{
     font-size: 25px;
   }
@@ -114,11 +154,22 @@ font-weight: bold;
   .phoneNumbers{
     margin-left: 20px;
   }
+  .staffCardText{
+    font-size: 16px;
+  }
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (min-width: 1000px) {
+  .staffCardText{
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (min-width: 1900px) {
   .infoContainerInfo{
     font-size: 22px;
   }
 
 }
+
