@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
-    <Navbar />
-    <router-view style="margin-top: 100px"/>
+    <Header />
+    <router-view/>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 import './style.css';
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Header,
+    Footer
   }
 }
 
@@ -41,7 +44,6 @@ $primary-invert: findColorInvert($primary);
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 </style>

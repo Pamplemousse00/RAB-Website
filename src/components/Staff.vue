@@ -56,8 +56,8 @@
   <div class="heading1">
     All Staff
   </div>
-  <div style="display: flex; justify-content: center">
-    <div style="width: 80%; height: 400px; background-color: #FFFF00"></div>
+  <div style="display: flex; justify-content: center; margin-bottom: 100px;">
+    <div style="width: 80%; height: 400px; background-color: #AAAA00"></div>
   </div>
 </div>
 </template>

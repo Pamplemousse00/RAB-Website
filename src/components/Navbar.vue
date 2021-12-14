@@ -12,13 +12,13 @@
       </div>
     </div>
 
-    <div id="navMenu" class="navbar-menu" v-bind:class="{ 'is-active': showNav }">
+    <div id="navMenu" class="navbar-menu" v-bind:class="{'is-active' : showNav }">
       <div class="navbar-start" v-on:click="condToggle">
         <div class="navbar-item has-dropdown is-hoverable">
           <router-link to="/staff" class="navbar-link">
             About Us
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark" style="visibility: visible;">
+          <div class="navbar-dropdown is-boxed is-dark">
             <router-link to="/staff" class="navbar-item">
               Staff
             </router-link>
@@ -32,7 +32,7 @@
           <router-link to="/referrals" class="navbar-link">
             For Physicians
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark" style="visibility: visible;">
+          <div class="navbar-dropdown is-boxed is-dark">
 
                 <div class="nested navbar-item dropdown" style="padding: 0px;">
                   <div class="dropdown-trigger" style="width: 100%">
@@ -73,7 +73,7 @@
           <router-link to="/" class="navbar-link">
             For Patients
           </router-link>
-          <div class="navbar-dropdown is-boxed is-dark" style="visibility: visible;">
+          <div class="navbar-dropdown is-boxed is-dark">
             <a class="navbar-item" href="https://arthritis.ca/support-education/online-learning/eating-well">
               Diet
             </a>
@@ -135,10 +135,11 @@ export default {
       this.showNav = !this.showNav
     },
     condToggle () {
+      console.log("EFEWFEWF")
       // if user clicks on mobile menu, hide the menu
-      if (this.showNav) {
-        this.toggle()
-      }
+        this.showNav = false
+        document.getElementById('navMenu').classList.remove('is-active')
+        console.log(document.getElementById('navMenu').classList)
     },
     resize() {
       
@@ -174,8 +175,11 @@ nav.navbar {
   }
 }
 @media only screen and (max-width: 770px) {
-  .nested.dropdown {
+  .navbar-dropdown{
     visibility: visible;
+  }
+  .nested.dropdown {
+    visibility: visible !important;
     .dropdown-menu {
       display: block;
     }

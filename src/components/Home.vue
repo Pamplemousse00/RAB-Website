@@ -40,11 +40,7 @@
           <div class="phoneNumbers" >Dr. V. Ahluwalia: EXT-221<br>Dr. S. Bajaj: EXT-231<br>Dr. R. Joshi: EXT-251<br> Dr. T. Papneja: EXT-261<br> Early Arthritis Clinic: EXT-240</div>
         </div>
       </div>
-    </div>
-    <div class="row" style="height: 110px; background-color: #994593; color: white; font-size: 35px">
-      Rheumatology Associates Brampton 2021
-    </div>
-    
+    </div>   
   </div>
 </template>
 
