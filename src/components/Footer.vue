@@ -1,7 +1,7 @@
 <template>
   <footer class="footer" style="background-color: #994593; height: 100px;">
   <div class="content has-text-centered" style="color: white; font-size: 40px;">
-    <p>
+    <p class="footerText">
       Rheumatology Associates Brampton 2021
     </p>
   </div>
@@ -15,3 +15,7 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+
+</style>

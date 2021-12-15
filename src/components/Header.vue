@@ -1,21 +1,25 @@
 <template>
   <div class="header">
       
-      <div @click="$router.push('/')" class="headerImage">
-        <img :src="logoSource" style="height: 70px; display: inline; margin: 10px;">
-        <img :src="titleSource" style="max-width: 200px; display: inline; margin: 10px;">
-      </div>
+      <div class="headerBanner">
+        <div class="logoContainer" @click="goHome()">
+          <img :src="logoSource" style="height: 70px; display: inline; margin: 10px;">
+          <img :src="titleSource" style="max-width: 200px; display: inline; margin: 10px;">
+        </div>
 
-      <div class="burgerContainer" @click="openMenu()">
-        <div class="burger">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+        <div class="burgerContainer" @click="toggleMenu()">
+          <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
         </div>
       </div>
 
+      
 
-      <div class="headerMenu">
+
+      <div class="headerMenu" @click="closeMenu()">
         
 
           <router-link to="/staff" class="headerLink">
@@ -133,12 +137,24 @@ export default {
         document.getElementById('navMenu').classList.remove('is-active')
         console.log(document.getElementById('navMenu').classList)
     },
-    openMenu(){
-      if(this.headerMenuDOMElement.style.display == 'block') {
+    toggleMenu(){
+      console.log("toggle menu")
+      if(this.headerMenuDOMElement.style.display == 'flex') {
         this.headerMenuDOMElement.style.display = 'none'
       } else {
-        this.headerMenuDOMElement.style.display = 'block'
+        this.headerMenuDOMElement.style.display = 'flex'
       }
+    },
+    closeMenu(){
+      if(visualViewport.width < 770){
+        this.headerMenuDOMElement.style.display = 'none'
+        console.log("close menu")
+      } else {
+        this.headerMenuDOMElement.style.display = 'flex'
+      }
+    },
+    goHome(){
+      this.$router.push('/')
     }
   }
 }
@@ -153,10 +169,12 @@ export default {
   width: 100%;
 }
 
-.headerImage{
+.headerBanner{
   background-color: white;
-  display: block;
+  display: flex;
   cursor: pointer;
+  width: 100%;
+  justify-content: center;
 }
 .headerMenu{
   display: flex;
@@ -240,14 +258,23 @@ export default {
   
 }
 
-
+.logoContainer{
+  width: 100%;
+}
 
 @media only screen and (max-width: 770px){
 .headerMenu{
   flex-direction: column;
   overflow: scroll;
   display: none;
-  max-height: 80vh;
+  max-height: 100vh;
+  padding-bottom: 100px;
+}
+.headerBanner{
+  justify-content: space-between;
+}
+.logoContainer{
+  width: auto;
 }
 .headerDropdown{
   width: 100%;
@@ -268,7 +295,7 @@ export default {
 
 .burger {
   width: 60px;
-  height: 100px;
+  height: 60px;
   display: flex;
   align-items: center;
   flex-direction: column;
