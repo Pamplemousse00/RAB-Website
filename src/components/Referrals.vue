@@ -12,7 +12,6 @@
         </div>
       </div>
         <div class="column">
-          <div style="text-align: left; border: 1px solid black; padding-left: 20px; margin-bottom: 10px; border-radius: 5px; font-size: 20px;">Use this form for all other referrals to the office.</div>
             <div style="border: 2px solid black; border-radius: 10px;">
                 <div class="pdfHeader">Office Referral Form</div>
                 <object data="./STAR.pdf" type="application/pdf" style="height:80vh; width: 95%">

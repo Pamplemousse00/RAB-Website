@@ -6,7 +6,7 @@
             <div class="slideshowButton" v-on:click="decrementIndex">
               <b-icon icon="arrow-left" class="slideshowIcon"/>
             </div>
-            <img v-bind:src="getImageSrc" style="width: 80%; min-width: 300px; height: auto">
+            <img v-bind:src="getImageSrc" style="width: 80%; min-width: 300px; height: auto; max-width: 800px;">
             <div class="slideshowButton" v-on:click="incrementIndex">
               <b-icon icon="arrow-right" class="slideshowIcon"/>
             </div>

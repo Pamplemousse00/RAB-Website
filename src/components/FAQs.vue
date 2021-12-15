@@ -83,7 +83,7 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
         {
           question: "I have been referred for physiotherapy and I don't have private insurance coverage. Am I eligible for OHIP-covered physiotherapy? ",
           answer: `Please click <a href='https://www.ontario.ca/page/physiotherapy-clinics-government-funded'>HERE</a> to see if you are eligible.
-          If you are eligible, click <a href='https://www.health.gov.on.ca/en/public/programs/physio/pub_clinics.aspx'>HERE</a> to see clinics that may be near you.
+          Click <a href='https://www.health.gov.on.ca/en/public/programs/physio/pub_clinics.aspx'>HERE</a> to see clinics that may be near you.
           `
         },
         {

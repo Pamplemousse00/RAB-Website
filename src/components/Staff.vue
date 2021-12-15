@@ -99,14 +99,14 @@ export default {
       ],
       moa: [
         {
-          name: "Minnie Punnia",
+          name: "Minnie P.",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/minnie.jpg'),
           color: "#ffccb8"
         },
         {
-          name: "Sandra Dee",
+          name: "Sandra D.",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/sandra.jpg'),
@@ -114,14 +114,14 @@ export default {
           
         },
         {
-          name: "Debbie",
+          name: "Debbie H.",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/debbie.jpg'),
           color: "#cccdff"
         },
         {
-          name: "Amanda Fleury",
+          name: "Amanda F",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/amanda.jpg'),
@@ -146,12 +146,12 @@ export default {
       ],
       ahp: [
         {
-                name: "Shawn McKinnon",
-                role: "EAC Medical Office Administrator",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/shawn.jpg'),
-                color: "#ffccfd"
-              },
+            name: "Shawn McKinnon",
+            role: "EAC Medical Office Administrator",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/shawn.jpg'),
+            color: "#ffccfd"
+        },
         {
             name: "Lisa Denning, PT",
             role: "Early Arthritis Clinic ACPAC Therapist",

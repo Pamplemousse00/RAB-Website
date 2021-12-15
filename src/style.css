@@ -124,6 +124,7 @@ font-weight: bold;
   margin-top: 50px;
 }
 
+
 @media only screen and (max-width: 770px){
   .staffCard{
     margin-left: 0px;
@@ -138,6 +139,12 @@ font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 50px;
+  }
+  .googleMap{
+    margin-left: 0px;
+  }
+  .phoneNumbers{
+    margin-left: 20px;
   }
 }
 
