@@ -115,4 +115,13 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
   margin-top: 50px;
   margin-bottom: 20px;
 }
+.card-header-title{
+  text-align: left;
+}
+@media only screen and (max-width: 770px){
+.card-header-title{
+  text-align: left !important;
+}
+}
+
 </style>

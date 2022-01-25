@@ -3,8 +3,8 @@
       
       <div class="headerBanner">
         <div class="logoContainer" @click="goHome()">
-          <img :src="logoSource" style="height: 70px; display: inline; margin: 10px;">
-          <img :src="titleSource" style="max-width: 200px; display: inline; margin: 10px;">
+            <img :src="logoSource" style="width: 20%; height: auto;">
+            <img :src="titleSource" style="width: 100%; height: auto;">
         </div>
 
         <div class="burgerContainer" @click="toggleMenu()">
@@ -59,7 +59,7 @@
               
 
             <router-link to="/infographics" class="subItem">
-              Gout & IA Clinical Pearls
+              Gout & TA Clinical Pearls
             </router-link>
             <router-link to="/iacaremap" class="subItem">
               Inflammatory Arthritis Care Map
@@ -75,7 +75,7 @@
           <router-link to="/" class="headerLink">
             For Patients
             <div class="headerDropdown">
-              <a class="subItem" href="https://arthritis.ca/support-education/online-learning/eating-well">
+              <a class="subItem" href="https://arthritis.ca/support-education/online-learning/eating-well" target="_blank">
                 Diet
               </a>
               <a class="subItem" href="https://orthoinfo.org/">
@@ -85,19 +85,19 @@
                 Medications
               </a>
               <hr class="dropdown-divider">
-              <a class="subItem" href="arthritis.ca">
+              <a class="subItem" href="https://arthritis.ca">
                 Arthritis Society
               </a>
-              <a class="subItem" href="arthritis.ca">
+              <a class="subItem" href="https://arthritis.ca">
                 Rheum Info
               </a>
-              <a class="subItem" href="www.ontario.ca/page/find-family-doctor-or-nurse-practitioner">
+              <a class="subItem" href="https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner">
                 How to Find a Family Doctor
               </a>
               <a class="subItem" href="https://www.peelregion.ca/health/">
                 Region of Peel Health Services
               </a>
-              <a class="subItem" href="www.williamoslerhs.ca">
+              <a class="subItem" href="https://www.williamoslerhs.ca">
                 William Osler Health System
               </a>
               
@@ -174,6 +174,7 @@ export default {
   display: flex;
   cursor: pointer;
   width: 100%;
+  flex-direction: row;
   justify-content: center;
 }
 .headerMenu{
@@ -260,9 +261,17 @@ export default {
 
 .logoContainer{
   width: 100%;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  min-width: 100px;
 }
 
 @media only screen and (max-width: 770px){
+  .header{
+    height: 100px;
+  }
 .headerMenu{
   flex-direction: column;
   overflow: scroll;
@@ -270,30 +279,26 @@ export default {
   max-height: 100vh;
   padding-bottom: 100px;
 }
-.headerBanner{
-  justify-content: space-between;
-}
-.logoContainer{
-  width: auto;
-}
 .headerDropdown{
-  width: 100%;
-  max-width: none;
+  max-width: 100%;
   position: relative;
   display: block;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .headerImage{
   float: left;
 }
 
 .burgerContainer{
-  float: right;
   cursor: pointer;
   padding-right: 30px;
   padding-top: 30px;
+  width: 100%;
 }
 
 .burger {
+  float: right;
   width: 60px;
   height: 60px;
   display: flex;

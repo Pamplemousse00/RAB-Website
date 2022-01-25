@@ -2,13 +2,18 @@
   <div>
     <div class="columns" style="margin: 5px;">
       <div class="column">
-        <div class="content">
+        <div class="content" style="font-size: 25px;">
           <h1 style="margin-left: 100px;">Office Referrals</h1>
-          <p>For Referrals to the office, please use this form.</p>
-          blah blah office information<br>
+          Attention Referring Doctors and Health Care Personnel, <br> <br>
 
-          form Info<br>
-          make sure you do this and this whatever
+          Please complete this referral in its entirety and attach any investigations that have been completed by the patient:
+          Xrays, Ultrasounds, MRI's, CT Scans that have been done for the affected areas within the last 2 years. 
+          Please also include up to date blood work, especially for concerns of inflammation.<br> <br>
+
+          Attaching the above helps with properly triaging referrals and will aid in the patient getting an appointment, it will also help with patients appointments once seen.<br><br>
+
+          Thank you, Rheumatology Associates Brampton<br>
+
         </div>
       </div>
         <div class="column">
