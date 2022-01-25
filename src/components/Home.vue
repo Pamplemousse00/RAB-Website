@@ -11,14 +11,14 @@
               <div class="infoContainer" style="background-color: #caa064">
                 <div class="infoContainerTitle black">What is a Rheumatologist?</div>
                 <div class="infoContainerInfo black">
-                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of arthritis and other diseases of the joints, muscles and bones.  There are over 100 types of arthritis!
+                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
                 </div>
               </div>
             </div>
             <div class="column">
                <div class="infoContainer" style="background-color: #994593" @click="$router.push('/eac')">
                 <div class="infoContainerTitle white">What is an ACPAC Therapist?</div>
-                <div class="infoContainerInfo white">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care.</div>
+                <div class="infoContainerInfo white">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care. They work with the Rheumatologist to deliver optimal care.</div>
                </div>
             </div>
           </div>         
@@ -26,6 +26,7 @@
       </div>
     </div>
     <div class="row" style="margin-top: 80px; height: auto; background-color: #caa064">
+      <a name="contact"></a>
       <div style="font-size: 40px; color: white">Contact Us</div>
       <div class="columns">
         <div class="column">

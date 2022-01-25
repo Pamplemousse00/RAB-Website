@@ -59,7 +59,7 @@
               
 
             <router-link to="/infographics" class="subItem">
-              Gout & TA Clinical Pearls
+              Gout & TA Infographics
             </router-link>
             <router-link to="/iacaremap" class="subItem">
               Inflammatory Arthritis Care Map
@@ -104,8 +104,11 @@
             </div>
           </router-link>
           <router-link to="/faqs" class="headerLink">
-            FAQ
+            FAQs
           </router-link>
+          <a href="./#contact" class="headerLink">
+            Contact Us
+          </a>
         </div>
       </div>
 </template>

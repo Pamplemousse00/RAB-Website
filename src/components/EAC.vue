@@ -41,17 +41,21 @@
           <div style="border: 1px solid black; border-radius: 5px;font-size: 23px; margin-bottom: 20px">
             <div style="font-size: 25px; padding-bottom: 10px;">
               Location / Contact Us:  </div>
-              RELOCATED TO: <br>
+              RELOCATED FROM: <br>
+              
+              WOHS BCH <br>
+              
+              to:<br>
             40 Finchgate Blvd. Suite 314 <br>
 
-        Phone: 905-799-1850 EXT. ?<br> FAX: ?<br>
+        Phone: 905-494-6218<br> FAX: 905-799-8178<br>
           </div>
         </div>
         <div class="row">
             <div style="border: 2px solid black; border-radius: 10px;">
                 <div class="pdfHeader">EAC Referral Form</div>
-                <object data="./cart.pdf" type="application/pdf" style="height:80vh; width: 95%">
-                    <embed src="./cart.pdf" type="application/pdf" />
+                <object data="./Canadian Arthritis Referral Tool.pdf" type="application/pdf" style="height:80vh; width: 95%">
+                    <embed src="./Canadian Arthritis Referral Tool.pdf" type="application/pdf" />
                 </object>
             </div>
         </div>

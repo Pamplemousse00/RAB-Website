@@ -35,7 +35,7 @@
       <div class="staffCard" :style="'background-color: '+person.color">
         <div class="centered">
           <img :src="person.image" style="border-radius: 5px"/>
-          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}<br>{{person.secondRole}}</div>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
       <div class="staffCard" :style="'background-color: '+person.color">
         <div class="centered">
           <img :src="person.image" style="border-radius: 5px"/>
-          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}<br>{{person.secondRole}}</div>
         </div>
       </div>
     </div>
@@ -99,14 +99,14 @@ export default {
       ],
       moa: [
         {
-          name: "Minnie P.",
+          name: "Minnie",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/minnie.jpg'),
           color: "#ffccb8"
         },
         {
-          name: "Sandra D.",
+          name: "Sandra",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/sandra.jpg'),
@@ -114,14 +114,14 @@ export default {
           
         },
         {
-          name: "Debbie H.",
+          name: "Debbie",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/debbie.jpg'),
           color: "#cccdff"
         },
         {
-          name: "Amanda F",
+          name: "Amanda",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
           image: require('@/assets/images/staff/amanda.jpg'),
@@ -131,57 +131,48 @@ export default {
       scribes: [
         {
             name: "Dilnoor Siddhu",
-            role: "Medical Scribe",
+            role: "Medical Scribe for",
+            secondRole: "Dr. Ahluwalia",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/dilnoor.jpg'),
             color: "#ffccb8"
           },
           {
             name: "Jaden Chera",
-            role: "Medical Scribe",
+            role: "Medical Scribe for",
+            secondRole: "Dr. Bajaj & Dr. Joshi",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/jaden.jpg'),
-            color: "#ffccb8"
+            color: "#00ffff"
           },          
       ],
       ahp: [
+        
         {
+            name: "Lisa Denning, PT",
+            role: "Early Arthritis Clinic",
+            secondRole: "ACPAC Therapist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/lisa.jpg'),
+            color: "#ffccfd",
+          },
+          {
             name: "Shawn McKinnon",
             role: "EAC Medical Office Administrator",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/shawn.jpg'),
             color: "#ffccfd"
         },
-        {
-            name: "Lisa Denning, PT",
-            role: "Early Arthritis Clinic ACPAC Therapist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/lisa.jpg'),
-            color: "#ffccfd",
-          },
           {
             name: "Mercedes Reeb, OT",
-            role: "Arthritis Society ACPAC Therapist",
+            role: "Arthritis Society",
+            secondRole: "ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/silhouette.jpg'),
-          },
-          {
-            name: "Kerri Ryan",
-            role: "Foot Specialist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
-            children: [
-              
-            ]
-          },
-          {
-                name: "Natalie",
-                role: "idk",
-                description: "Lorem ipsum dolor di amet whatever.",
-                image: require('@/assets/images/staff/silhouette.jpg'),
-              },
+            color: "#99ccff"
+          },          
           
-      ]
+      ],
     }
   },
   name: 'Links',
