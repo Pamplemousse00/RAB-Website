@@ -168,7 +168,7 @@ export default {
             role: "Arthritis Society",
             secondRole: "ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
+            image: require('@/assets/images/staff/mercedes.jpg'),
             color: "#99ccff"
           },          
           

@@ -5,7 +5,9 @@
         <div class="logoContainer" @click="goHome()">
             <img :src="logoSource" style="width: 20%; height: auto;">
             <img :src="titleSource" style="width: 100%; height: auto;">
+            
         </div>
+        <div style="margin-left: 100px; padding-top: 15px; font-size: 15px; font-weight: bold; color: #994593">Suite 314 - 40 Finchgate Blvd. <br>Brampton, ON, L6T 3J1</div>
 
         <div class="burgerContainer" @click="toggleMenu()">
           <div class="burger">
@@ -22,17 +24,20 @@
       <div class="headerMenu" @click="closeMenu()">
         
 
-          <router-link to="/staff" class="headerLink">
-            About Us
+          <div class="headerLink">
+            <router-link to="/staff" class="headerLinkText">
+              About Us
+            </router-link>
             <div class="headerDropdown">
-            <router-link to="/staff" class="subItem">
-              Staff
-            </router-link>
-            <router-link to="/Philanthropy" class="subItem">
-              Philanthropy
-            </router-link>
+              <router-link to="/staff" class="subItem">
+                Staff
+              </router-link>
+              <router-link to="/Philanthropy" class="subItem">
+                Philanthropy
+              </router-link>
+            </div>
           </div>
-          </router-link>
+          
 
           <router-link to="/referrals" class="headerLink">
             For Physicians
@@ -59,7 +64,7 @@
               
 
             <router-link to="/infographics" class="subItem">
-              Gout & TA Infographics
+              Gout & Temporal Arteritis Infographics
             </router-link>
             <router-link to="/iacaremap" class="subItem">
               Inflammatory Arthritis Care Map
@@ -71,42 +76,44 @@
           </router-link>
 
           
-
-          <router-link to="/" class="headerLink">
+          <div class="headerLink">
+          <router-link to="/" class="headerLinkText">
             For Patients
+          </router-link>
             <div class="headerDropdown">
               <a class="subItem" href="https://arthritis.ca/support-education/online-learning/eating-well" target="_blank">
                 Diet
               </a>
-              <a class="subItem" href="https://orthoinfo.org/">
+              <a class="subItem" href="https://orthoinfo.org/"  target="_blank">
                 Exercises
               </a>
-              <a class="subItem" href="https://arthritis.ca/treatment/medication/medication-reference-guide">
+              <a class="subItem" href="https://arthritis.ca/treatment/medication/medication-reference-guide"  target="_blank">
                 Medications
               </a>
               <hr class="dropdown-divider">
-              <a class="subItem" href="https://arthritis.ca">
+              <a class="subItem" href="https://arthritis.ca" target="_blank">
                 Arthritis Society
               </a>
-              <a class="subItem" href="https://arthritis.ca">
+              <a class="subItem" href="https://arthritis.ca" target="_blank">
                 Rheum Info
               </a>
-              <a class="subItem" href="https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner">
+              <a class="subItem" href="https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" target="_blank">
                 How to Find a Family Doctor
               </a>
-              <a class="subItem" href="https://www.peelregion.ca/health/">
+              <a class="subItem" href="https://www.peelregion.ca/health/" target="_blank">
                 Region of Peel Health Services
               </a>
-              <a class="subItem" href="https://www.williamoslerhs.ca">
+              <a class="subItem" href="https://www.williamoslerhs.ca" target="_blank">
                 William Osler Health System
               </a>
               
             </div>
-          </router-link>
+          
+          </div>
           <router-link to="/faqs" class="headerLink">
             FAQs
           </router-link>
-          <a href="./#contact" class="headerLink">
+          <a href="/#contact" class="headerLink">
             Contact Us
           </a>
         </div>
@@ -250,6 +257,12 @@ export default {
   padding-bottom: 10px;
   width: 100%;
   cursor: pointer;
+}
+.headerLinkText{
+  color: white;
+}
+.headerLinkText:hover{
+  color: white;
 }
 .headerLink:hover{
   background-color: #555555;

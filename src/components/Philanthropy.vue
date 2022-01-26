@@ -3,14 +3,14 @@
         <div class="content" style="font-size: 25px;">
           <h1 style="margin-left: 100px; text-align: center">Philanthropy</h1>
 
-          Brampton Rheumatology Assoiates have a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
+          Rheumatology Associates Brampton have a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
     
 
         </div>
         <div class="charityContainer">
           <div class="charityBox">
             <div class="charityText">
-              WOHS Holi gala
+              WOHS Holi Gala
             </div>
           </div>
           <div class="charityBox">

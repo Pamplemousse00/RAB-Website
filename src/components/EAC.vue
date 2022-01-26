@@ -41,11 +41,11 @@
           <div style="border: 1px solid black; border-radius: 5px;font-size: 23px; margin-bottom: 20px">
             <div style="font-size: 25px; padding-bottom: 10px;">
               Location / Contact Us:  </div>
-              RELOCATED FROM: <br>
+              <b>RELOCATED FROM:</b> <br>
               
               WOHS BCH <br>
               
-              to:<br>
+              <b>to:</b><br>
             40 Finchgate Blvd. Suite 314 <br>
 
         Phone: 905-494-6218<br> FAX: 905-799-8178<br>

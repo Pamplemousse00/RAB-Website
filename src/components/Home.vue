@@ -11,7 +11,7 @@
               <div class="infoContainer" style="background-color: #caa064">
                 <div class="infoContainerTitle black">What is a Rheumatologist?</div>
                 <div class="infoContainerInfo black">
-                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
+                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
                 </div>
               </div>
             </div>
