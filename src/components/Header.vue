@@ -7,7 +7,7 @@
             <img :src="titleSource" style="width: 100%; height: auto;">
             
         </div>
-        <div style="margin-left: 100px; padding-top: 15px; font-size: 15px; font-weight: bold; color: #994593">Suite 314 - 40 Finchgate Blvd. <br>Brampton, ON, L6T 3J1</div>
+        <div class="headerAddress">Suite 314 - 40 Finchgate Blvd. <br>Brampton, ON, L6T 3J1</div>
 
         <div class="burgerContainer" @click="toggleMenu()">
           <div class="burger">
@@ -39,11 +39,15 @@
           </div>
           
 
-          <router-link to="/referrals" class="headerLink">
+          <div class="headerLink">
+            <router-link to="/referrals" class="headerLinkText">
             For Physicians
+            </router-link>
             <div class="headerDropdown">
-              <router-link to="/referrals" class="subItem withHover">
-                Referrals
+              <div class="subItem withHover">
+                <router-link to="/referrals" style="color: black">
+                  Referrals
+                </router-link>
                 <div class="subList">
                 <router-link to="/referrals" class="subItem">
                     Office
@@ -58,7 +62,7 @@
                     Rapid Access Clinic (Low Back Pain)
                   </a>
               </div>
-              </router-link>
+              </div>
 
               
               
@@ -73,7 +77,7 @@
               Helpful Links...
             </router-link>
           </div>
-          </router-link>
+          </div>
 
           
           <div class="headerLink">
@@ -113,7 +117,7 @@
           <router-link to="/faqs" class="headerLink">
             FAQs
           </router-link>
-          <a href="/#contact" class="headerLink">
+          <a @click="gotoContact()" class="headerLink">
             Contact Us
           </a>
         </div>
@@ -136,6 +140,9 @@ export default {
     this.headerMenuDOMElement = document.getElementsByClassName('headerMenu')[0]
   },
   methods: {
+    gotoContact() {
+      this.$router.push('/#contact')
+    },
     toggle () {
       // toggle between displaying and hiding mobile menu
       this.showNav = !this.showNav
@@ -186,6 +193,13 @@ export default {
   width: 100%;
   flex-direction: row;
   justify-content: center;
+}
+.headerAddress{
+  margin-left: 100px;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #994593;
 }
 .headerMenu{
   display: flex;
@@ -294,6 +308,9 @@ export default {
   display: none;
   max-height: 100vh;
   padding-bottom: 100px;
+}
+.headerAddress{
+  display: none;
 }
 .headerDropdown{
   max-width: 100%;

@@ -11,8 +11,17 @@
             <li>
               Xrays
             </li>
+            <li>
+              Ultrasounds
+            </li>
+            <li>
+              CT Scans
+            </li>
+            <li>
+              MRIs
+            </li>
           </ul>
-          , Ultrasounds, CT Scans, or MRI's that have been done for the affected areas within the last 2 years. 
+          that have been done for the affected areas within the last 2 years. 
           Please also include up-to-date blood work, especially when referring for inflammatory disease.<br> <br>
 
           A complete referral can help expedite the triage process, and assist with timely care of your patient.<br><br>
@@ -24,7 +33,7 @@
         <div class="column">
             <div style="border: 2px solid black; border-radius: 10px;">
                 <div class="pdfHeader">Office Referral Form</div>
-                <object data="./STAR.pdf" type="application/pdf" style="height:80vh; width: 95%">
+                <object data="./STAR.pdf" type="application/pdf" style="height:85vh; width: 95%">
                     <embed src="./STAR.pdf" type="application/pdf" />
                 </object>
             </div>

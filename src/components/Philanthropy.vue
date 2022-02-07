@@ -1,26 +1,30 @@
 <template>
 <div>
         <div class="content" style="font-size: 25px;">
-          <h1 style="margin-left: 100px; text-align: center">Philanthropy</h1>
+          <h1 style="text-align: center">Philanthropy</h1>
 
           Rheumatology Associates Brampton have a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
     
 
         </div>
-        <div class="charityContainer">
-          <div class="charityBox">
+        <div class="columns charityContainer">
+          <div class="charityBox" style="display: inline;">
+          <img :src="holiPath" style="width: 100%;">
             <div class="charityText">
               WOHS Holi Gala
             </div>
           </div>
           <div class="charityBox">
-            Aim for Seva
+          <img :src="aimPath" style="width: 100%;">
           </div>
           <div class="charityBox">
-            Arthritis Society
+            <img :src="arthritisPath" style="width: 100%;">
           </div>
-          <div class="charityBox">
-            Our Place Peel
+          <div class="charityBox" style="display: inline;">
+            <img :src="peelPath" style="width: 100%;height: 80%;">
+            <div class="charityText">
+              Our Place Peel
+            </div>
           </div>
         </div>
 </div>
@@ -31,32 +35,10 @@
 export default {
   data() {
     return {
-      allFAQs: [
-        {
-          question: "I've had a cortizone injection.",
-          answer: "Plan to rest for 2 days afterwards."
-        },
-        {
-          question: "What to bring to appointment?",
-          answer: "Bring medication pill bottles, health card and wear loose clothing."
-        },
-        {
-          question: "Parking situation?",
-          answer: "Paid parking is available."
-        },
-        {
-          question: "How to get ahold of us?",
-          answer: "Please leave a voicemail. 647-000-0000. We will check it. Leave a detailed message with your name, phone number, Date of Birth, and what you're calling about."
-        },
-        {
-          question: "I'm having a reaction to my medication.",
-          answer: "Paid parking is available."
-        },
-        {
-          question: "I cannot make it to my appointment.",
-          answer: "Call and leave a message at the office as early as possible. Many patients wait months to see us."
-        }
-      ]
+      holiPath: require('@/assets/images/Philanthropy/holigala.png'),
+      aimPath: require('@/assets/images/Philanthropy/aimforseva.png'),
+      arthritisPath: require('@/assets/images/Philanthropy/arthritissociety.png'),
+      peelPath: require('@/assets/images/Philanthropy/ourplacepeel.jpg'),
     }
   },
   name: 'FAQs',
@@ -80,19 +62,26 @@ export default {
 }
 
 .charityContainer{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  margin: 20px;
 }
 .charityBox{
 width: 100%;
 height: 300px;
-background-color: green;
 margin: 10px;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
-font-size: 40px;
+transition: all .2s ease;
+margin-bottom: 100px;
+}
+.charityBox:hover{
+  transform: scale(1.1);
+}
+.charityText{
+  text-align: center;
+  margin-left: 20px;
+  position: absolute;
+  color: black;
+  font-size: 40px;
 }
 </style>

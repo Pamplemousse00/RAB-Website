@@ -6,13 +6,8 @@
   <div class="columns" >
     <div class="column">
       <div class="box" @click="openInNewTab('rheuminfo.com')">
-        <div class="columns">
-          <div class="column is-one-third">
-            <div class="boxItem">
-            <img :src="require('@/assets/images/links/rheuminfo.png')" style="display:inline-block; width: 90%; margin-left: -20px;">
-            </div>
-          </div>
-        </div>
+      <img :src="require('@/assets/images/links/rheuminfo.png')" style="display:inline-block; width: 90%; margin-left: -20px;">
+
       </div>
     </div>
     <div class="column">

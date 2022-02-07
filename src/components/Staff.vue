@@ -143,7 +143,7 @@ export default {
             secondRole: "Dr. Bajaj & Dr. Joshi",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/jaden.jpg'),
-            color: "#00ffff"
+            color: "#00ddee"
           },          
       ],
       ahp: [

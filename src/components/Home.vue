@@ -25,8 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top: 80px; height: auto; background-color: #caa064">
-      <a name="contact"></a>
+    <div class="row" style="margin-top: 80px; height: auto; background-color: #caa064" id="contact">
       <div style="font-size: 40px; color: white">Contact Us</div>
       <div class="columns">
         <div class="column">
@@ -38,7 +37,47 @@
               Suite 314<br>40 Finchgate Blvd.  L6T3J1 <br> 905-799-1850
             </div>
           </div>
-          <div class="phoneNumbers" >Dr. V. Ahluwalia: EXT-221<br>Dr. S. Bajaj: EXT-231<br>Dr. R. Joshi: EXT-251<br> Dr. T. Papneja: EXT-261<br> Early Arthritis Clinic: EXT-240</div>
+          <div class="phoneNumbers" >
+            <table>
+              <tr>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Extension
+                </th>
+                <th>
+                  Fax
+                </th>
+              </tr>
+              <tr>
+                <td>Dr. Vandana Ahluwalia</td>
+                <td>EXT-221</td>
+                <td>905-799-8040</td>
+              </tr>
+              <tr>
+                <td>Dr. Sangeeta Bajaj</td>
+                <td>EXT-231</td>
+                <td>905-799-2055</td>
+              </tr>
+              <tr>
+                <td>Dr. Raman Joshi</td>
+                <td>EXT-251</td>
+                <td>905-799-3129</td>
+              </tr>
+              <tr>
+                <td>Dr. Tripti Papneja</td>
+                <td>EXT-261</td>
+                <td>905-799-3819</td>
+              </tr>
+              <tr>
+                <td>Early Arthritis Clinic</td>
+                <td>EXT-240</td>
+                <td>905-799-8178</td>
+              </tr>
+              
+            </table>
+          </div>
         </div>
       </div>
     </div>   
@@ -57,6 +96,12 @@ export default {
   components: {
     Slideshow,
   },
+  mounted() {
+    //var section=this.$router.currentRoute.value.replace("#", "");
+    var section = this.$router.currentRoute.hash.replace("#", "")
+    if (section)
+      this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
+  },
   methods: {
     getGoogleMapSrc(){
       return require('@/assets/images/googleMap.png');
@@ -67,3 +112,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+th{
+  text-align: center;
+  padding-right: 10px;
+}
+td {
+  padding-right: 10px;
+}
+</style>
