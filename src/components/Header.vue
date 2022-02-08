@@ -180,7 +180,7 @@ export default {
 <style lang="scss">
 .header{
 
-  height: 180px;
+  height: 200px;
   position: fixed;
   top: 0;
   width: 100%;

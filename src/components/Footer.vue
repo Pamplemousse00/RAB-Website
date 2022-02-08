@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" style="background-color: #994593; height: 100px;">
+  <footer class="footer" style="background-color: #994593; height: 80px;">
   <div class="content has-text-centered" style="color: white; font-size: 40px;">
     <p class="footerText">
       Rheumatology Associates Brampton 2021

@@ -25,7 +25,16 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top: 80px; height: auto; background-color: #caa064" id="contact">
+    <div class="row" style="margin-top: 80px; height: auto; background-color: #994593" id="contact">
+      <div style="font-size: 40px; color: white">About Us</div>
+      <div style="color: white; font-size: 25px; text-align: center; max-width: 1000px; width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 30px;">
+      Welcome to Rheumatology Associates Brampton.<br><br>
+      We are a group of rheumatologists providing care to patients with arthritis and rheumatic diseases in brampton and surrounding areas for the past 25 years. <br>
+      <br>Our rheumatologists are on staff at William Osler Health System - Brampton Civic Hospital.
+      We are a referral practice only, and you must be referred by your primary care practicioner.
+      </div>
+    </div>
+    <div class="row" style="height: auto; background-color: #caa064" id="contact">
       <div style="font-size: 40px; color: white">Contact Us</div>
       <div class="columns">
         <div class="column">
@@ -34,7 +43,7 @@
         <div class="column">
           <div class="address">
             <div>
-              Suite 314<br>40 Finchgate Blvd.  L6T3J1 <br> 905-799-1850
+              Suite 314<br>40 Finchgate Blvd. <br> 905-799-1850
             </div>
           </div>
           <div class="phoneNumbers" >
@@ -80,7 +89,7 @@
           </div>
         </div>
       </div>
-    </div>   
+    </div> 
   </div>
 </template>
 
