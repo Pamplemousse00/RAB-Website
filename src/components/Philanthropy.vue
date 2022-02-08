@@ -8,19 +8,19 @@
 
         </div>
         <div class="columns charityContainer">
-          <div class="charityBox" style="display: inline;">
+          <div class="charityBox" style="display: inline;" @click="openInNewTab('support.oslerfoundation.org/site/SPageServer?pagename=holigala22_event_homepage')">
           <img :src="holiPath" style="width: 100%;">
             <div class="charityText">
               WOHS Holi Gala
             </div>
           </div>
-          <div class="charityBox">
+          <div class="charityBox" @click="openInNewTab('www.aimforseva.ca')">
           <img :src="aimPath" style="width: 100%;">
           </div>
-          <div class="charityBox">
+          <div class="charityBox" @click="openInNewTab('www.arthritis.ca')">
             <img :src="arthritisPath" style="width: 100%;">
           </div>
-          <div class="charityBox" style="display: inline;">
+          <div class="charityBox" style="display: inline;" @click="openInNewTab('www.ourplacepeel.org')">
             <img :src="peelPath" style="width: 100%;height: 80%;">
             <div class="charityText">
               Our Place Peel
@@ -49,6 +49,9 @@ export default {
   mounted() {
   },
   methods: {
+    openInNewTab(link){
+      window.open('https://' + link, '_blank');
+    }
   }
 }
 </script>
@@ -73,6 +76,7 @@ justify-content: center;
 align-items: center;
 transition: all .2s ease;
 margin-bottom: 100px;
+cursor: pointer;
 }
 .charityBox:hover{
   transform: scale(1.1);
