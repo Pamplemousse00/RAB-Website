@@ -1,124 +1,31 @@
 <template>
-  <div class="header">
-      
-      <div class="headerBanner">
-        <div class="logoContainer" @click="goHome()">
-            <img :src="logoSource" style="width: 20%; height: auto;">
-            <img :src="titleSource" style="width: 100%; height: auto;">
-            
-        </div>
-        <div class="headerAddress">Suite 314 - 40 Finchgate Blvd. <br>Brampton, ON, L6T 3J1</div>
-
-        <div class="burgerContainer" @click="toggleMenu()">
-          <div class="burger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </div>
-      </div>
-
-      
+  <div class="header" >
+         
 
 
       <div class="headerMenu" @click="closeMenu()">
         
-
+        <div class="headerLink" style="font-size: 20px;">
+          Wise Lotus
+          2638 Dinville
+        </div>
           <div class="headerLink">
-            <router-link to="/staff" class="headerLinkText">
-              About Us
+            <router-link to="/house" class="headerLinkText">
+              The House
             </router-link>
-            <div class="headerDropdown">
-              <router-link to="/staff" class="subItem">
-                Staff
-              </router-link>
-              <router-link to="/Philanthropy" class="subItem">
-                Philanthropy
-              </router-link>
-            </div>
           </div>
           
 
           <div class="headerLink">
-            <router-link to="/referrals" class="headerLinkText">
-            For Physicians
-            </router-link>
-            <div class="headerDropdown">
-              <div class="subItem withHover">
-                <router-link to="/referrals" style="color: black">
-                  Referrals
-                </router-link>
-                <div class="subList">
-                <router-link to="/referrals" class="subItem">
-                    Office
-                  </router-link>
-                  <router-link to="/eac" class="subItem">
-                    Early Arthritis Clinic
-                  </router-link>
-                  <a href="https://www.williamoslerhs.ca/en/areas-of-care/hip-and-knee-joint-osteoarthritis-rapid-access-clinic.aspx" target="_blank" class="subItem">
-                    Rapid Access Clinic (hip & knee replacement)
-                  </a>
-                  <a href="https://www.lowbackrac.ca/rac-lbp-registration.html" target="_blank" class="subItem">
-                    Rapid Access Clinic (Low Back Pain)
-                  </a>
-              </div>
-              </div>
-
-              
-              
-
-            <router-link to="/infographics" class="subItem">
-              Gout & Temporal Arteritis Infographics
-            </router-link>
-            <router-link to="/iacaremap" class="subItem">
-              Inflammatory Arthritis Care Map
-            </router-link>
-            <router-link to="/links" class="subItem">
-              Helpful Links...
+            <router-link to="/pool" class="headerLinkText">
+            The Pool
             </router-link>
           </div>
-          </div>
-
-          
-          <div class="headerLink">
-          <router-link to="/" class="headerLinkText">
-            For Patients
-          </router-link>
-            <div class="headerDropdown">
-              <a class="subItem" href="https://arthritis.ca/support-education/online-learning/eating-well" target="_blank">
-                Diet
-              </a>
-              <a class="subItem" href="https://orthoinfo.org/"  target="_blank">
-                Exercises
-              </a>
-              <a class="subItem" href="https://arthritis.ca/treatment/medication/medication-reference-guide"  target="_blank">
-                Medications
-              </a>
-              <hr class="dropdown-divider">
-              <a class="subItem" href="https://arthritis.ca" target="_blank">
-                Arthritis Society
-              </a>
-              <a class="subItem" href="https://arthritis.ca" target="_blank">
-                Rheum Info
-              </a>
-              <a class="subItem" href="https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" target="_blank">
-                How to Find a Family Doctor
-              </a>
-              <a class="subItem" href="https://www.peelregion.ca/health/" target="_blank">
-                Region of Peel Health Services
-              </a>
-              <a class="subItem" href="https://www.williamoslerhs.ca" target="_blank">
-                William Osler Health System
-              </a>
-              
-            </div>
-          
-          </div>
-          <router-link to="/faqs" class="headerLink">
-            FAQs
+          <router-link to="/resort" class="headerLink">
+            The Resort
           </router-link>
           <a @click="gotoContact()" class="headerLink">
-            Contact Us
+            Location
           </a>
         </div>
       </div>
@@ -180,14 +87,13 @@ export default {
 <style lang="scss">
 .header{
 
-  height: 200px;
   position: fixed;
   top: 0;
   width: 100%;
+  
 }
 
 .headerBanner{
-  background-color: white;
   display: flex;
   cursor: pointer;
   width: 100%;
@@ -206,7 +112,7 @@ export default {
   flex-direction: row;
   width: 100vw;
   align-items: center;
-  background-color: #994593;
+  background-color: #1878d9;
 }
 .headerDropdown{
   display: none;
@@ -271,15 +177,15 @@ export default {
   padding-bottom: 10px;
   width: 100%;
   cursor: pointer;
+  font-family: 'Lato', sans-serif;
 }
 .headerLinkText{
   color: white;
 }
 .headerLinkText:hover{
-  color: white;
+  color: orange;
 }
 .headerLink:hover{
-  background-color: #555555;
   color: white;
 }
 
@@ -294,8 +200,10 @@ export default {
   max-height: 100px;
   display: flex;
   flex-direction: row;
-  max-width: 300px;
   min-width: 100px;
+  font-size: 40px;
+  background-color: #1878d9;
+  color: white;padding: 10px;
 }
 
 @media only screen and (max-width: 770px){

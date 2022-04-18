@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div style="display: flex; align-items: center;">
+    <div>
         
           <div class="slideshowContainer">
-            <div class="slideshowButton" v-on:click="decrementIndex">
+            <div class="slideshowButton" v-on:click="decrementIndex" style="margin-right: -100px;">
               <b-icon icon="arrow-left" class="slideshowIcon"/>
             </div>
-            <img v-bind:src="getImageSrc" style="width: 80%; min-width: 50px; height: auto; max-width: 800px;">
-            <div class="slideshowButton" v-on:click="incrementIndex">
+            <img v-bind:src="getImageSrc" style="width: 100%; min-width: 50px; height: auto;">
+            <div class="slideshowButton" v-on:click="incrementIndex" style="margin-left: -100px;">
               <b-icon icon="arrow-right" class="slideshowIcon"/>
             </div>
           </div>
@@ -24,7 +24,7 @@ export default {
     data() {
         return {
             currentIndex: 0,
-            totalImageCount: 4,
+            totalImageCount: 5,
             imageInterval: null,
             delay: 8000
         }
@@ -34,7 +34,7 @@ export default {
     },
     computed: {
         getImageSrc() {
-            return require('@/assets/images/' + this.currentIndex + '.jpg');
+            return require('@/assets/images/' + this.currentIndex + '.jpeg');
         }
     },
     methods: {

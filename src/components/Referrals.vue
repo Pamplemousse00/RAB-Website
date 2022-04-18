@@ -1,44 +1,26 @@
 <template>
   <div>
-    <div class="columns" style="margin: 5px;">
+    <div class="columns">
       <div class="column">
-        <div class="content" style="font-size: 25px; text-align: left">
-          <h1 style="margin-left: 100px;">Office Referrals</h1>
-          Attention Referring Doctors and Health Care Personnel, <br> <br>
-
-          Please complete this referral in its entirety and attach any investigations that have been completed by the patient such as:
-          <ul>
-            <li>
-              Xrays
-            </li>
-            <li>
-              Ultrasounds
-            </li>
-            <li>
-              CT Scans
-            </li>
-            <li>
-              MRIs
-            </li>
-          </ul>
-          that have been done for the affected areas within the last 2 years. 
-          Please also include up-to-date blood work, especially when referring for inflammatory disease.<br> <br>
-
-          A complete referral can help expedite the triage process, and assist with timely care of your patient.<br><br>
-
-          Thank you, Rheumatology Associates Brampton<br>
-
+        <div style="border: 1px solid black; border-radius: 5px; margin: 10px; padding: 10px;">
+          <div style="font-weight: bold; margin-bottom: 10px; font-family: playfair-display-scbold; font-size: 25px;">West-facing backyard to enjoy the sun</div>
+        <img :src="pool1">
+        
         </div>
+        <img :src="pool2">
+        Enjoy outdoor eating in a screened in lanai
       </div>
-        <div class="column">
-            <div style="border: 2px solid black; border-radius: 10px;">
-                <div class="pdfHeader">Office Referral Form</div>
-                <object data="./STAR.pdf" type="application/pdf" style="height:85vh; width: 95%">
-                    <embed src="./STAR.pdf" type="application/pdf" />
-                </object>
-            </div>
-        </div>
+      <div class="column">
+        <img :src="pool3">
+        Heated spa in a scrrened in lanai
+        <img :src="pool4">
+        Fully lit for a late night swim!
+
+      </div>
     </div>
+    
+    
+
   </div>
 </template>
 
@@ -46,6 +28,11 @@
 export default {
   data() {
     return {
+      pool1: require('@/assets/images/pool/pool1.jpeg'),
+      pool2: require('@/assets/images/pool/pool2.jpeg'),
+      pool3: require('@/assets/images/pool/pool3.jpeg'),
+      pool4: require('@/assets/images/pool/pool4.jpeg')
+
     }
   },
   name: 'Referrals',
@@ -59,3 +46,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
