@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './components/Home.vue'
-import Resort from './components/Resort.vue'
+import FAQs from './components/FAQs.vue'
+import Links from './components/Links.vue'
 import EAC from './components/EAC.vue'
+import Philanthropy from './components/Philanthropy.vue'
+import Staff from './components/Staff.vue'
 import Referrals from './components/Referrals.vue'
 import Infographics from './components/Infographics.vue'
 import IACareMap from './components/IACareMap.vue'
-import Amenities from './components/Amenities.vue'
 
 Vue.use(Router)
 
@@ -19,9 +21,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/resort',
-      name: 'Resort',
-      component: Resort
+      path: '/faqs',
+      name: 'FAQs',
+      component: FAQs
+    },
+    {
+      path: '/links',
+      name: 'Links',
+      component: Links
     },
     {
       path: '/eac',
@@ -29,14 +36,19 @@ export default new Router({
       component: EAC
     },
     {
+      path: '/philanthropy',
+      name: 'Philanthropy',
+      component: Philanthropy
+    },
+    {
+      path: '/staff',
+      name: 'Staff',
+      component: Staff
+    },
+    {
       path: '/referrals',
       name: 'Referrals',
       component: Referrals
-    },
-    {
-      path: '/amenities',
-      name: "Amenities",
-      component: Amenities
     },
     {
       path: '/infographics',
