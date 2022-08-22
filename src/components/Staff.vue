@@ -96,6 +96,13 @@ export default {
             image: require('@/assets/images/staff/tripti.jpg'),
             color: "#f9ffcc"
           },
+          {
+            name: "Dr. Arpita Gantayet",
+            role: "Rheumatologist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/arpita.jpg'),
+            color: "#bbbbbb"
+          },
       ],
       moa: [
         {
@@ -127,6 +134,13 @@ export default {
           image: require('@/assets/images/staff/amanda.jpg'),
           color: "#f9ffcc"
         },
+        {
+          name: "Admin Assistant",
+          role: "Medical Office Administrator",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/silhouette.jpg'),
+          color: "#bbbbbb"
+        },
       ],
       scribes: [
         {
@@ -138,11 +152,11 @@ export default {
             color: "#ffccb8"
           },
           {
-            name: "Jaden Chera",
+            name: "Rhea Sinha",
             role: "Medical Scribe for",
             secondRole: "Dr. Bajaj & Dr. Joshi",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/jaden.jpg'),
+            image: require('@/assets/images/staff/rhea.jpg'),
             color: "#00ddee"
           },          
       ],

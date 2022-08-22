@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="column">
-      <div class="box" @click="openInNewTab('gccrm-arthritis.goldcareonline.net/arthritiscrmlive/')">
+      <div class="box" @click="openInNewTab('https://arthritis.ca/support-education/support-in-your-community/arthritis-rehabilitation-and-education-program-(ar')">
         <div class="columns">
           <div class="column">
             <div class="boxItem">
@@ -46,7 +46,7 @@
       </div>
     </div>
   </div>
-  <div style="margin-top: 10px; color: grey">These links are provided for information only blah blah.</div>
+  <div style="margin-top: 10px; color: grey">These links are provided for information only.</div>
 </div>
 </template>
 

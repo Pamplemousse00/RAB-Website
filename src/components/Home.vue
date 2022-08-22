@@ -29,9 +29,9 @@
       <div style="font-size: 40px; color: white">About Us</div>
       <div style="color: white; font-size: 25px; text-align: center; max-width: 1000px; width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 30px;">
       Welcome to Rheumatology Associates Brampton.<br><br>
-      We are a group of rheumatologists providing care to patients with arthritis and rheumatic diseases in brampton and surrounding areas for the past 25 years. <br>
+      We are a group of rheumatologists providing care to patients with arthritis and rheumatic diseases in Brampton and surrounding areas for the past 25 years. <br>
       <br>Our rheumatologists are on staff at William Osler Health System - Brampton Civic Hospital.
-      We are a referral practice only, and you must be referred by your primary care practicioner.
+      We are a referral practice only, and you must be referred by your primary care practitioner.
       </div>
     </div>
     <div class="row" style="height: auto; background-color: #caa064" id="contact">
@@ -42,8 +42,21 @@
         </div>
         <div class="column">
           <div class="address">
-            <div>
+            <div class="columns">
+              <div class="column">
+              Current Address: <br>
               Suite 314<br>40 Finchgate Blvd. <br> 905-799-1850
+            </div>
+              <div class="column">
+                <div class="moving">
+                  <u>We're Moving</u>
+                  November 1st, 2022<br>
+                  <u>New Address:</u><br>
+                  Suite 100<br>195 County Court Blvd., Brampton<br>
+                </div>
+              </div>
+            
+            
             </div>
           </div>
           <div class="phoneNumbers" >

@@ -8,7 +8,7 @@
 
         </div>
         <div class="columns charityContainer">
-          <div class="charityBox" style="display: inline;" @click="openInNewTab('support.oslerfoundation.org/site/SPageServer?pagename=holigala22_event_homepage')">
+          <div class="charityBox" style="display: inline;" @click="openInNewTab('oslerfoundation.org/')">
           <img :src="holiPath" style="width: 100%;">
             <div class="charityText">
               WOHS Holi Gala

@@ -26,7 +26,8 @@
 
           A complete referral can help expedite the triage process, and assist with timely care of your patient.<br><br>
 
-          Thank you, Rheumatology Associates Brampton<br>
+          Thank you, <br>
+          Rheumatology Associates Brampton<br>
 
         </div>
       </div>

@@ -2,7 +2,7 @@
   <div id="app">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
     <Header />
-    <router-view style="margin-top: 180px"/>
+    <router-view style="margin-top: 160px"/>
     <Footer />
   </div>
 </template>

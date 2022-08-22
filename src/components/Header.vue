@@ -141,7 +141,8 @@ export default {
   },
   methods: {
     gotoContact() {
-      this.$router.push('/#contact')
+      this.$router.push('/')
+       this.$router.push('/#contact')
     },
     toggle () {
       // toggle between displaying and hiding mobile menu
@@ -175,6 +176,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="scss">
@@ -182,6 +184,7 @@ export default {
 
   height: 200px;
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
 }
@@ -196,7 +199,7 @@ export default {
 }
 .headerAddress{
   margin-left: 100px;
-  padding-top: 15px;
+  padding-top: 35px;
   font-size: 15px;
   font-weight: bold;
   color: #994593;
@@ -205,7 +208,6 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  align-items: center;
   background-color: #994593;
 }
 .headerDropdown{
@@ -296,11 +298,19 @@ export default {
   flex-direction: row;
   max-width: 300px;
   min-width: 100px;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 770px){
   .header{
     height: 100px;
+  }
+  .subList{
+    visibility: visible;
+    display: block;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 20px;
   }
 .headerMenu{
   flex-direction: column;
@@ -318,6 +328,7 @@ export default {
   display: block;
   margin-left: 5px;
   margin-right: 5px;
+  min-width: 0px;
 }
 .headerImage{
   float: left;
