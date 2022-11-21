@@ -47,21 +47,19 @@ export default {
          
         {
           question: "Is parking available?",
-          answer: `Yes, you need to pay for parking before your appointment. We recommend:<br>
-          New patients: 2 hours <br>
-          Follow-up appointment: 1 hour <br>
-          If you have any issues, contact ParkSmart at '1-800-561-1972'`
+          answer: `Yes, complimentary parking is available on-site for the duration for your appointment.`
         },
         {
           question: "How to contact us?",
           answer: `
-          If it is an emergency,  call 911 or proceed to the nearest Emergency Department to you.
-          If not, you can call the office line: <br>
-Dr. Vandana Ahluwalia: 905-799-1850 ext 221 <br>
-Dr. Sangeeta Bajaj: 905-799-1850 ext 231 <br>
-Dr. Raman Joshi: 251 <br>
-Dr. Tripti Papneja: 261 <br>
-Lisa Denning EAC: 240 <br>
+          If you are having a medical emergency,  call 911 or proceed to the nearest Emergency Department.<br>
+          If you would like to contact the office, you can call: 905-799-1850.<br>
+Dr. Vandana Ahluwalia: ext 221 <br>
+Dr. Sangeeta Bajaj: ext 231 <br>
+Dr. Arpita Gantayet: ext 241 <br>
+Dr. Raman Joshi: ext 251 <br>
+Dr. Tripti Papneja: ext 261 <br>
+Lisa Denning EAC: ext 240 <br>
 Leave a detailed message with your name, phone number, Date of Birth, and what you're calling about.
 `
         },

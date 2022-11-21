@@ -17,6 +17,10 @@
   height: 500px;
   width: 100%;
 }
+.movingBanner{
+  background-color: yellow;
+  height: 100px;
+}
 .pdfHeader{
   display: block;
   font-size: 25px;
@@ -137,6 +141,10 @@ font-weight: bold;
 @media only screen and (max-width: 770px){
   .moving{
     text-align: center;
+  }
+  .movingBanner{
+    height: 200px;
+    background-color: yellow;
   }
   .slideshowContainer{
     height: 300px;

@@ -6,7 +6,7 @@
   <div class="columns" >
     <div class="column">
       <div class="box" @click="openInNewTab('rheuminfo.com')">
-      <img :src="require('@/assets/images/links/rheuminfo.png')" style="display:inline-block; width: 90%; margin-left: -20px;">
+      <img :src="require('@/assets/images/links/rheuminfo.png')" style="display:inline-block; width: 90%; margin-left: -20px; margin-top: 40px">
 
       </div>
     </div>

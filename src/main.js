@@ -12,6 +12,7 @@ new Vue({
 }).$mount('#app')
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.title = "bramptonrheum"
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);

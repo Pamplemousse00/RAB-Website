@@ -46,7 +46,7 @@
               WOHS BCH <br>
               
               <b>to:</b><br>
-            40 Finchgate Blvd. Suite 314 <br>
+            195 County Court Blvd., Suite 100<br> <br>
 
         Phone: 905-494-6218<br> FAX: 905-799-8178<br>
           </div>

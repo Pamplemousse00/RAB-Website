@@ -7,7 +7,7 @@
             <img :src="titleSource" style="width: 100%; height: auto;">
             
         </div>
-        <div class="headerAddress">Suite 314 - 40 Finchgate Blvd. <br>Brampton, ON, L6T 3J1</div>
+        <div class="headerAddress">Suite 100 - 195 County Court Blvd.<br>Brampton, ON, L6W 4P7</div>
 
         <div class="burgerContainer" @click="toggleMenu()">
           <div class="burger">
@@ -299,6 +299,18 @@ export default {
   max-width: 300px;
   min-width: 100px;
   padding-top: 20px;
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1200px) {
+.headerLink{
+  font-size: 25px;
+  color: white;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+}
 }
 
 @media only screen and (max-width: 770px){

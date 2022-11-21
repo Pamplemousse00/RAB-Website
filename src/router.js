@@ -61,7 +61,13 @@ export default new Router({
       component: IACareMap
     },
   ],
-  scrollBehavior () {
-    return { x: 0, y: 0 }
-  }
+  scrollBehavior: function(to) {
+    if (to.hash) {
+        return {selector: to.hash}
+        //Or for Vue 3:
+        //return {el: to.hash}
+    } else {
+        return { x: 0, y: 0 }
+    }
+},
 })

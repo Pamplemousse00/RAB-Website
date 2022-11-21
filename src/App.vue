@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
-    <Header />
-    <router-view style="margin-top: 160px"/>
-    <Footer />
+  <div>
+    <head>
+      <title>Rheumatology Associates Brampton</title>
+    </head>
+
+    <div id="app">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+      <Header />
+      <router-view style="margin-top: 160px"/>
+      <Footer />
+    </div>
   </div>
 </template>
 

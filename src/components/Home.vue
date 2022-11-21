@@ -1,5 +1,11 @@
 <template>
   <div class="rows">
+    <div class="row movingBanner">
+      <div style="font-size: 25px; text-align: center; padding-top: 25px; color: black; background-color: yellow;">
+        We have moved and the new office is open for <b>in-person appointments.</b><br>
+        See the new address below, under "Contact Us".
+      </div>
+    </div>
     <div class="row">
       <div class="columns" style="margin-top: 50px">
         <div class="column">
@@ -38,29 +44,21 @@
       <div style="font-size: 40px; color: white">Contact Us</div>
       <div class="columns">
         <div class="column">
-          <img class="googleMap" @click="openInNewTab('https://www.google.ca/maps/place/40+Finchgate+Blvd,+Brampton,+ON+L6T+3H9/@43.7280689,-79.714262,17z')" :src="getGoogleMapSrc()" />
+          <img class="googleMap" @click="openInNewTab('https://www.google.com/maps/place/195+County+Ct+Blvd,+Brampton,+ON+L6W+4P7/@43.6617349,-79.7230884,17z')" :src="getGoogleMapSrc()" />
         </div>
         <div class="column">
           <div class="address">
             <div class="columns">
               <div class="column">
-              Current Address: <br>
-              Suite 314<br>40 Finchgate Blvd. <br> 905-799-1850
-            </div>
-              <div class="column">
-                <div class="moving">
-                  <u>We're Moving</u>
-                  November 1st, 2022<br>
-                  <u>New Address:</u><br>
-                  Suite 100<br>195 County Court Blvd., Brampton<br>
-                </div>
-              </div>
-            
-            
+              We have Moved. <br>
+              New Address is: <br>
+              <b>Suite 100<br>195 County Court Blvd., <br>Brampton, L6W 4P7<br>
+              Main Office #: 905-799-1850</b>
+            </div>        
             </div>
           </div>
           <div class="phoneNumbers" >
-            <table>
+            <table border=1 frame=void rules=rows  bordercolor="#ffffff">
               <tr>
                 <th>
                   Name
@@ -68,7 +66,7 @@
                 <th>
                   Extension
                 </th>
-                <th>
+                <th style="text-align: center">
                   Fax
                 </th>
               </tr>
@@ -81,6 +79,11 @@
                 <td>Dr. Sangeeta Bajaj</td>
                 <td>EXT-231</td>
                 <td>905-799-2055</td>
+              </tr>
+              <tr>
+                <td>Dr. Arpita Gantayet</td>
+                <td>EXT-241</td>
+                <td>905-799-9463</td>
               </tr>
               <tr>
                 <td>Dr. Raman Joshi</td>
@@ -126,7 +129,7 @@ export default {
   },
   methods: {
     getGoogleMapSrc(){
-      return require('@/assets/images/googleMap.png');
+      return require('@/assets/images/googleMap.jpg');
     },
     openInNewTab(link) {
       window.open(link, '_blank');

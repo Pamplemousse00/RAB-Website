@@ -83,6 +83,13 @@ export default {
             
           },
           {
+            name: "Dr. Arpita Gantayet",
+            role: "Rheumatologist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/arpita.jpg'),
+            color: "#bbbbbb"
+          },
+          {
             name: "Dr. Raman Joshi",
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
@@ -96,13 +103,7 @@ export default {
             image: require('@/assets/images/staff/tripti.jpg'),
             color: "#f9ffcc"
           },
-          {
-            name: "Dr. Arpita Gantayet",
-            role: "Rheumatologist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/arpita.jpg'),
-            color: "#bbbbbb"
-          },
+          
       ],
       moa: [
         {
@@ -112,6 +113,7 @@ export default {
           image: require('@/assets/images/staff/minnie.jpg'),
           color: "#ffccb8"
         },
+        
         {
           name: "Sandra",
           role: "Medical Office Administrator",
@@ -119,6 +121,13 @@ export default {
           image: require('@/assets/images/staff/sandra.jpg'),
            color: "#ccffdb"
           
+        },
+        {
+          name: "Zalesha",
+          role: "Medical Office Administrator",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/zalesha.jpg'),
+          color: "#bbbbbb"
         },
         {
           name: "Debbie",
@@ -134,13 +143,7 @@ export default {
           image: require('@/assets/images/staff/amanda.jpg'),
           color: "#f9ffcc"
         },
-        {
-          name: "Admin Assistant",
-          role: "Medical Office Administrator",
-          description: "Lorem ipsum dolor di amet whatever.",
-          image: require('@/assets/images/staff/silhouette.jpg'),
-          color: "#bbbbbb"
-        },
+        
       ],
       scribes: [
         {

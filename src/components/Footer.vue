@@ -24,6 +24,7 @@ export default {
 .terms {
   color: white;
   font-size: 18px;
+  background-color: #994593;
 }
 .footerLink {
   color: orange;
