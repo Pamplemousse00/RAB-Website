@@ -1,7 +1,7 @@
 <template>
   <div class="rows">
     <div class="row movingBanner">
-      <div style="font-size: 25px; text-align: center; padding-top: 25px; color: black; background-color: yellow;">
+      <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #faef70;">
         We have moved and the new office is open for <b>in-person appointments.</b><br>
         See the new address below, under "Contact Us".
       </div>
@@ -14,7 +14,7 @@
         <div class="column" style="display: inline-flex">
           <div class="columns">
             <div class="column">
-              <div class="infoContainer" style="background-color: #caa064">
+              <div class="infoContainer" style="background-color: #caa064; border: 1px solid black;">
                 <div class="infoContainerTitle black">What is a Rheumatologist?</div>
                 <div class="infoContainerInfo black">
                   A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
@@ -22,9 +22,9 @@
               </div>
             </div>
             <div class="column">
-               <div class="infoContainer" style="background-color: #994593" @click="$router.push('/eac')">
-                <div class="infoContainerTitle white">What is an ACPAC Therapist?</div>
-                <div class="infoContainerInfo white">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care. They work with the Rheumatologist to deliver optimal care.</div>
+               <div class="infoContainer" style="background-color: #D9ABD6" @click="$router.push('/eac')">
+                <div class="infoContainerTitle black">What is an ACPAC Therapist?</div>
+                <div class="infoContainerInfo black">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care. They work with the Rheumatologist to deliver optimal care.</div>
                </div>
             </div>
           </div>         
@@ -145,5 +145,10 @@ th{
 }
 td {
   padding-right: 10px;
+}
+.movingBanner{
+  background-color: #faef70;
+  height: 100px;
+  margin-top: -15px;
 }
 </style>

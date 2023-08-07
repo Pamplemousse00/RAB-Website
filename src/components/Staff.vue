@@ -28,7 +28,7 @@
   </div>
   
   <div class="staffHeading">
-    Scribes
+    Team Members
   </div>
     <div class="columns">
     <div class="column" v-for="person in scribes" :key="person.name" style="display: flex; justify-content: center;">
@@ -147,6 +147,13 @@ export default {
       ],
       scribes: [
         {
+            name: "Upnita Gupta",
+            role: "Physician Assistant",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/Upnita.jpg'),
+            color: "#ffccb8"
+          },
+        {
             name: "Dilnoor Siddhu",
             role: "Medical Scribe for",
             secondRole: "Dr. Ahluwalia",
@@ -155,29 +162,29 @@ export default {
             color: "#ffccb8"
           },
           {
-            name: "Rhea Sinha",
+            name: "Prince Battu",
             role: "Medical Scribe for",
             secondRole: "Dr. Bajaj & Dr. Joshi",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/rhea.jpg'),
-            color: "#00ddee"
+            image: require('@/assets/images/staff/silhouette.jpg'),
+            color: "#abe0ff "
           },          
       ],
       ahp: [
         
         {
-            name: "Lisa Denning, PT",
+            name: "TBD",
             role: "Early Arthritis Clinic",
             secondRole: "ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/lisa.jpg'),
+            image: require('@/assets/images/staff/silhouette.jpg'),
             color: "#ffccfd",
           },
           {
-            name: "Shawn McKinnon",
+            name: "Nina Khabra",
             role: "EAC Medical Office Administrator",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/shawn.jpg'),
+            image: require('@/assets/images/staff/nina.jpg'),
             color: "#ffccfd"
         },
           {

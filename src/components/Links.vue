@@ -6,7 +6,8 @@
   <div class="columns" >
     <div class="column">
       <div class="box" @click="openInNewTab('rheuminfo.com')">
-      <img :src="require('@/assets/images/links/rheuminfo.png')" style="display:inline-block; width: 90%; margin-left: -20px; margin-top: 40px">
+      <img :src="require('@/assets/images/links/rheuminfo.png')" style="display:inline-block; width: 90%; margin-left: -20px; margin-top: 4
+       0px">
 
       </div>
     </div>
@@ -22,7 +23,7 @@
       </div>
     </div>
     <div class="column">
-      <div class="box" @click="openInNewTab('https://arthritis.ca/support-education/support-in-your-community/arthritis-rehabilitation-and-education-program-(ar')">
+      <div class="box" @click="openInNewTab('arthritis.ca/support-education/support-in-your-community/arthritis-rehabilitation-and-education-program-(ar')">
         <div class="columns">
           <div class="column">
             <div class="boxItem">

@@ -98,7 +98,7 @@
               <a class="subItem" href="https://arthritis.ca" target="_blank">
                 Arthritis Society
               </a>
-              <a class="subItem" href="https://arthritis.ca" target="_blank">
+              <a class="subItem" href="https://rheuminfo.com/" target="_blank">
                 Rheum Info
               </a>
               <a class="subItem" href="https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" target="_blank">
@@ -182,7 +182,6 @@ export default {
 <style lang="scss">
 .header{
 
-  height: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -208,7 +207,8 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  background-color: #994593;
+  background-color: white;
+  border-bottom: 3px solid black;
 }
 .headerDropdown{
   display: none;
@@ -221,6 +221,31 @@ export default {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.15);
   z-index: 10;
+  border: 1px solid #F2E3F1;
+}
+.headerLink{
+  font-size: 35px;
+  color: black;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.headerLinkText{
+  color: black;
+}
+.headerLinkText:hover{
+  color: #8D3F88;
+}
+.headerLink:hover{
+  background-color: #F2E3F1;
+}
+
+.headerLink:hover > .headerDropdown{
+  display: block;
+  visibility: visible;
 }
 
 .subItem{
@@ -245,11 +270,11 @@ export default {
   font-size: 35px;
   position: absolute;
   margin-left: 90%;
-  border-radius: 5px;
    /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.15);
   margin-top: -50px;
   min-width: 300px;
+  border-radius: 5px;
 }
 
 .withHover:hover ~ .subList{
@@ -261,35 +286,11 @@ export default {
 }
 
 .subItem:hover{
-  background-color: #DDDDDD;
+  background-color: #F2E3F1;
   border-radius: 5px;
 }
 
-.headerLink{
-  font-size: 35px;
-  color: white;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  cursor: pointer;
-}
-.headerLinkText{
-  color: white;
-}
-.headerLinkText:hover{
-  color: white;
-}
-.headerLink:hover{
-  background-color: #555555;
-  color: white;
-}
 
-.headerLink:hover > .headerDropdown{
-  display: block;
-  visibility: visible;
-  
-}
 
 .logoContainer{
   width: 100%;
@@ -304,7 +305,7 @@ export default {
 @media only screen and (min-width: 770px) and (max-width: 1200px) {
 .headerLink{
   font-size: 25px;
-  color: white;
+  color: #7F397A;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;

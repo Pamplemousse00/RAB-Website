@@ -20,6 +20,7 @@
 .movingBanner{
   background-color: yellow;
   height: 100px;
+  margin-top: -15px;
 }
 .pdfHeader{
   display: block;
@@ -129,9 +130,7 @@ font-weight: bold;
   margin-top: 50px;
 }
 
-.footerText{
-  font-size: 40px;
-}
+
 
 .moving{
   color: black;

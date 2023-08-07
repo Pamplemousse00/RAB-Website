@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
+import VueMeta from 'vue-meta';
+
+Vue.use(VueMeta);
 Vue.use(Buefy)
 
 

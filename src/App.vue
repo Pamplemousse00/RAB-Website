@@ -3,15 +3,26 @@
     <head>
       <title>Rheumatology Associates Brampton</title>
     </head>
+    
 
     <div id="app">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
       <Header />
-      <router-view style="margin-top: 160px"/>
+      <router-view style="margin-top: 180px"/>
       <Footer />
     </div>
   </div>
 </template>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XV72TC1EB9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XV72TC1EB9');
+</script>
 
 <script>
 import Header from './components/Header.vue'
