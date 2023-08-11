@@ -166,7 +166,7 @@ export default {
             role: "Medical Scribe for",
             secondRole: "Dr. Bajaj & Dr. Joshi",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
+            image: require('@/assets/images/staff/prince.jpg'),
             color: "#abe0ff "
           },          
       ],

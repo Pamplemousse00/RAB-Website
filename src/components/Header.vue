@@ -208,7 +208,7 @@ export default {
   flex-direction: row;
   width: 100vw;
   background-color: white;
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid black;
 }
 .headerDropdown{
   display: none;
@@ -235,9 +235,6 @@ export default {
 }
 .headerLinkText{
   color: black;
-}
-.headerLinkText:hover{
-  color: #8D3F88;
 }
 .headerLink:hover{
   background-color: #F2E3F1;

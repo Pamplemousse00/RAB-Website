@@ -3,7 +3,7 @@
         <div class="content" style="font-size: 25px;">
           <h1 style="text-align: center">Philanthropy</h1>
 
-          Rheumatology Associates Brampton have a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
+          Rheumatology Associates Brampton has a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
     
 
         </div>

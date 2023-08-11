@@ -1,7 +1,7 @@
 <template>
   <div class="rows">
     <div class="row movingBanner">
-      <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #faef70;">
+      <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #ffcc6e; cursor: pointer;" @click="gotoContact()">
         We have moved and the new office is open for <b>in-person appointments.</b><br>
         See the new address below, under "Contact Us".
       </div>
@@ -14,7 +14,7 @@
         <div class="column" style="display: inline-flex">
           <div class="columns">
             <div class="column">
-              <div class="infoContainer" style="background-color: #caa064; border: 1px solid black;">
+              <div class="infoContainer" style="background-color: #afceed; ">
                 <div class="infoContainerTitle black">What is a Rheumatologist?</div>
                 <div class="infoContainerInfo black">
                   A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
@@ -22,7 +22,7 @@
               </div>
             </div>
             <div class="column">
-               <div class="infoContainer" style="background-color: #D9ABD6" @click="$router.push('/eac')">
+               <div class="infoContainer" style="background-color: #f7d7f5" @click="$router.push('/eac')">
                 <div class="infoContainerTitle black">What is an ACPAC Therapist?</div>
                 <div class="infoContainerInfo black">An ACPAC therapist is a physiotherapist or occupational therapist with advanced training in arthritis care. They work with the Rheumatologist to deliver optimal care.</div>
                </div>
@@ -31,17 +31,17 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top: 80px; height: auto; background-color: #994593" id="contact">
-      <div style="font-size: 40px; color: white">About Us</div>
-      <div style="color: white; font-size: 25px; text-align: center; max-width: 1000px; width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 30px;">
+    <div class="row" style="margin-top: 80px; height: auto; background-color: #f0c2ed" id="contact">
+      <div style="font-size: 40px; color: black">About Us</div>
+      <div style="color: black; font-size: 25px; text-align: center; max-width: 1000px; width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 30px;">
       Welcome to Rheumatology Associates Brampton.<br><br>
       We are a group of rheumatologists providing care to patients with arthritis and rheumatic diseases in Brampton and surrounding areas for the past 25 years. <br>
       <br>Our rheumatologists are on staff at William Osler Health System - Brampton Civic Hospital.
       We are a referral practice only, and you must be referred by your primary care practitioner.
       </div>
     </div>
-    <div class="row" style="height: auto; background-color: #caa064" id="contact">
-      <div style="font-size: 40px; color: white">Contact Us</div>
+    <div class="row" style="height: auto; background-color: white" id="contact">
+      <div style="font-size: 40px; color: black">Contact Us</div>
       <div class="columns">
         <div class="column">
           <img class="googleMap" @click="openInNewTab('https://www.google.com/maps/place/195+County+Ct+Blvd,+Brampton,+ON+L6W+4P7/@43.6617349,-79.7230884,17z')" :src="getGoogleMapSrc()" />
@@ -72,32 +72,32 @@
               </tr>
               <tr>
                 <td>Dr. Vandana Ahluwalia</td>
-                <td>EXT-221</td>
+                <td>EXT-1</td>
                 <td>905-799-8040</td>
               </tr>
               <tr>
                 <td>Dr. Sangeeta Bajaj</td>
-                <td>EXT-231</td>
+                <td>EXT-2</td>
                 <td>905-799-2055</td>
               </tr>
               <tr>
                 <td>Dr. Arpita Gantayet</td>
-                <td>EXT-241</td>
+                <td>EXT-5</td>
                 <td>905-799-9463</td>
               </tr>
               <tr>
                 <td>Dr. Raman Joshi</td>
-                <td>EXT-251</td>
+                <td>EXT-3</td>
                 <td>905-799-3129</td>
               </tr>
               <tr>
                 <td>Dr. Tripti Papneja</td>
-                <td>EXT-261</td>
+                <td>EXT-4</td>
                 <td>905-799-3819</td>
               </tr>
               <tr>
                 <td>Early Arthritis Clinic</td>
-                <td>EXT-240</td>
+                <td>EXT-6</td>
                 <td>905-799-8178</td>
               </tr>
               
@@ -131,6 +131,10 @@ export default {
     getGoogleMapSrc(){
       return require('@/assets/images/googleMap.jpg');
     },
+    gotoContact() {
+      this.$router.push('/')
+       this.$router.push('/#contact')
+    },
     openInNewTab(link) {
       window.open(link, '_blank');
     }
@@ -147,7 +151,7 @@ td {
   padding-right: 10px;
 }
 .movingBanner{
-  background-color: #faef70;
+  background-color: #ffcc6e;
   height: 100px;
   margin-top: -15px;
 }

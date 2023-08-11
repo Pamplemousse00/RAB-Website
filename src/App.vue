@@ -11,18 +11,20 @@
       <router-view style="margin-top: 180px"/>
       <Footer />
     </div>
+    <teleport to="head">
+    <component :is="'script'" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.bramptonrheum.ca/",
+        "name": "Rheumatology Associates Brampton"
+      }
+    </component>
+  </teleport>
   </div>
+  
 </template>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XV72TC1EB9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XV72TC1EB9');
-</script>
 
 <script>
 import Header from './components/Header.vue'

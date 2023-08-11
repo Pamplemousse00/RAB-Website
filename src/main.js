@@ -7,7 +7,10 @@ import VueMeta from 'vue-meta';
 
 Vue.use(VueMeta);
 Vue.use(Buefy)
-
+import VueAnalytics from 'vue-analytics';
+Vue.use(VueAnalytics, {
+  id: 'G-XV72TC1EB9'
+});
 
 new Vue({
   router,

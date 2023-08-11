@@ -1,6 +1,6 @@
 <template>
-  <footer style="background-color: #994593; height: 100px; padding-top: 20px;">
-  <div class="content has-text-centered" style="color: white; font-size: 40px;">
+  <footer style="background-color: #f0c2ed; height: 100px; padding-top: 20px;">
+  <div class="content has-text-centered" style="color: black; font-size: 40px;">
     <div class="footerText">
       Rheumatology Associates Brampton 2021
       <div class="terms">
@@ -22,15 +22,15 @@ export default {
 
 <style scoped>
 .terms {
-  color: white;
+  color: black;
   font-size: 18px;
-  background-color: #994593;
+  background-color: #f0c2ed;
   padding-bottom: 20px;
 }
 .footerText{
   font-size: 40px;
 }
 .footerLink {
-  color: orange;
+  color: blue;
 }
 </style>

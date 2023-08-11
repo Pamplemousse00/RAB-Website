@@ -17,11 +17,7 @@
   height: 500px;
   width: 100%;
 }
-.movingBanner{
-  background-color: yellow;
-  height: 100px;
-  margin-top: -15px;
-}
+
 .pdfHeader{
   display: block;
   font-size: 25px;
@@ -89,12 +85,12 @@ font-weight: bold;
 }
 .address{
   font-size: 35px;
-  color: white;
+  color: black;
   padding-bottom: 20px;
 }
 .phoneNumbers{
   font-size: 25px;
-  color: white;
+  color: black;
   text-align: left;
   padding-bottom: 25px;
 }
@@ -143,7 +139,7 @@ font-weight: bold;
   }
   .movingBanner{
     height: 200px;
-    background-color: yellow;
+    background-color: #ffcc6e;
   }
   .slideshowContainer{
     height: 300px;
