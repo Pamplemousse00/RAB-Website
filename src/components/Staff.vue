@@ -52,13 +52,21 @@
         </div>
       </div>
     </div>
+    </div>
+  <div class="staffHeading">
+    Office Manager
   </div>
-  <div class="heading1">
-    All Staff
+  <div class="columns" style="margin-bottom: 30px">
+    <div class="column" v-for="person in manager" :key="person.name" style="display: flex; justify-content: center;">
+      <div class="staffCard" :style="'background-color: '+person.color">
+        <div class="centered">
+          <img :src="person.image" style="border-radius: 5px"/>
+          <div class="staffCardText"> {{person.name}} <br> {{person.role}}</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div style="display: flex; justify-content: center; margin-bottom: 100px;">
-    <div style="width: 80%; height: 400px; background-color: #AAAA00"></div>
-  </div>
+  
 </div>
 </template>
 
@@ -83,10 +91,10 @@ export default {
             
           },
           {
-            name: "Dr. Arpita Gantayet",
+            name: "Dr. Sangheeta Thiviyarajah",
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/arpita.jpg'),
+            image: require('@/assets/images/staff/silhouette.jpg'),
             color: "#bbbbbb"
           },
           {
@@ -147,13 +155,6 @@ export default {
       ],
       scribes: [
         {
-            name: "Upnita Gupta",
-            role: "Physician Assistant",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/Upnita.jpg'),
-            color: "#ffccb8"
-          },
-        {
             name: "Dilnoor Siddhu",
             role: "Medical Scribe for",
             secondRole: "Dr. Ahluwalia",
@@ -162,18 +163,26 @@ export default {
             color: "#ffccb8"
           },
           {
-            name: "Prince Battu",
+            name: "Ruchi Shah",
             role: "Medical Scribe for",
-            secondRole: "Dr. Bajaj & Dr. Joshi",
+            secondRole: "Dr. Bajaj",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/prince.jpg'),
-            color: "#abe0ff "
-          },          
+            image: require('@/assets/images/staff/silhouette.jpg'),
+            color: "#ccffdb "
+          }, 
+          {
+            name: "Aneesh Patel",
+            role: "Medical Scribe for",
+            secondRole: "Dr. Joshi",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/silhouette.jpg'),
+            color: "#cccdff "
+          }        
       ],
       ahp: [
         
         {
-            name: "TBD",
+            name: "Nirmala Kodali",
             role: "Early Arthritis Clinic",
             secondRole: "ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
@@ -188,15 +197,25 @@ export default {
             color: "#ffccfd"
         },
           {
-            name: "Mercedes Reeb, OT",
+            name: "Chris Hawke, PT",
             role: "Arthritis Society",
             secondRole: "ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/mercedes.jpg'),
+            image: require('@/assets/images/staff/silhouette.jpg'),
             color: "#99ccff"
           },          
           
       ],
+      manager: [
+        {
+            name: "Ruth Milton",
+            role: "Office Manager",
+            secondRole: "RAB",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/silhouette.jpg'),
+            color: "#FFFFFF",
+          },
+      ]
     }
   },
   name: 'Links',

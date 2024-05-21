@@ -1,7 +1,7 @@
 <template>
   <div class="rows">
     <div class="row movingBanner">
-      <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #ffcc6e; cursor: pointer;" @click="gotoContact()">
+      <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #f0c2ed; cursor: pointer;" @click="gotoContact()">
         We have moved and the new office is open for <b>in-person appointments.</b><br>
         See the new address below, under "Contact Us".
       </div>
@@ -17,7 +17,7 @@
               <div class="infoContainer" style="background-color: #afceed; ">
                 <div class="infoContainerTitle black">What is a Rheumatologist?</div>
                 <div class="infoContainerInfo black">
-                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
+                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis!
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@
                 <td>905-799-2055</td>
               </tr>
               <tr>
-                <td>Dr. Arpita Gantayet</td>
+                <td>Dr. Sangheeta Thiviyarajah</td>
                 <td>EXT-5</td>
                 <td>905-799-9463</td>
               </tr>
@@ -151,7 +151,7 @@ td {
   padding-right: 10px;
 }
 .movingBanner{
-  background-color: #ffcc6e;
+  background-color: #f0c2ed;
   height: 100px;
   margin-top: -15px;
 }

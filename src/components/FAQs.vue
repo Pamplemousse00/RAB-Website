@@ -54,12 +54,12 @@ export default {
           answer: `
           If you are having a medical emergency,  call 911 or proceed to the nearest Emergency Department.<br>
           If you would like to contact the office, you can call: 905-799-1850.<br>
-Dr. Vandana Ahluwalia: ext 221 <br>
-Dr. Sangeeta Bajaj: ext 231 <br>
-Dr. Arpita Gantayet: ext 241 <br>
-Dr. Raman Joshi: ext 251 <br>
-Dr. Tripti Papneja: ext 261 <br>
-Lisa Denning EAC: ext 240 <br>
+Dr. Vandana Ahluwalia: EXT 1 <br>
+Dr. Sangeeta Bajaj: EXT 2 <br>
+Dr. Sangheeta Thiviyarajah: EXT 5 <br>
+Dr. Raman Joshi: EXT 3 <br>
+Dr. Tripti Papneja: EXT 4 <br>
+Early Arthritis Clinic: EXT 6 <br>
 Leave a detailed message with your name, phone number, Date of Birth, and what you're calling about.
 `
         },
