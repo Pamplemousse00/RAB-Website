@@ -2,7 +2,7 @@
   <footer style="background-color: #f0c2ed; height: 100px; padding-top: 20px;">
   <div class="content has-text-centered" style="color: black; font-size: 40px;">
     <div class="footerText">
-      Rheumatology Associates Brampton 2021
+      Rheumatology Associates Brampton 2024
       <div class="terms">
         By using this website, you agree to the <a href="./terms.pdf" class="footerLink">terms and conditions.</a>
       </div>

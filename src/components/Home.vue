@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top: 80px; height: auto; background-color: #f0c2ed" id="contact">
+    <div class="row" style="margin-top: 80px; height: auto; background-color: #f0c2ed">
       <div style="font-size: 40px; color: black">About Us</div>
       <div style="color: black; font-size: 25px; text-align: center; max-width: 1000px; width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 30px;">
       Welcome to Rheumatology Associates Brampton.<br><br>
@@ -57,7 +57,7 @@
             </div>        
             </div>
           </div>
-          <div class="phoneNumbers" >
+          <div class="phoneNumbers">
             <table border=1 frame=void rules=rows  bordercolor="#ffffff">
               <tr>
                 <th>

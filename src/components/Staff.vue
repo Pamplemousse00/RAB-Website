@@ -163,19 +163,11 @@ export default {
             color: "#ffccb8"
           },
           {
-            name: "Ruchi Shah",
-            role: "Medical Scribe for",
-            secondRole: "Dr. Bajaj",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
-            color: "#ccffdb "
-          }, 
-          {
             name: "Aneesh Patel",
             role: "Medical Scribe for",
             secondRole: "Dr. Joshi",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
+            image: require('@/assets/images/staff/aneesh.jpeg'),
             color: "#cccdff "
           }        
       ],
@@ -195,15 +187,7 @@ export default {
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/nina.jpg'),
             color: "#ffccfd"
-        },
-          {
-            name: "Chris Hawke, PT",
-            role: "Arthritis Society",
-            secondRole: "ACPAC Therapist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
-            color: "#99ccff"
-          },          
+        },       
           
       ],
       manager: [
