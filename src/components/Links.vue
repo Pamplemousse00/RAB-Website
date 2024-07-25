@@ -3,21 +3,23 @@
   <div class="heading1">
     Links for Physicians
   </div>
-  <div class="columns" style="padding-top: 20px;">
-    <div class="column" @click="openInNewTab('rheuminfo.com')" style="border: 1px solid black">
-      <img :src="require('@/assets/images/links/rheuminfo.png')" style="margin-left: 0px">
+  <div class="columns" style="padding: 30px; justify-content: center;">
+    <div class="column box" @click="openInNewTab('rheuminfo.com')" >
+      <img :src="require('@/assets/images/links/rheuminfo.png')">
     </div>
-    <div class="column" @click="openInNewTab('www.aaos.org')">
+    <div class="column box" @click="openInNewTab('www.aaos.org')">
       
-      <img :src="require('@/assets/images/links/aaos.png')" style="display:inline-block; width: 90%">
+      <img :src="require('@/assets/images/links/aaos.png')">
     </div>
-    <div class="column" @click='openInNewTab("arthritis.ca/support-education/support-in-your-community/arthritis-rehabilitation-and-education-program-(ar")'>
-      <img :src="require('@/assets/images/links/arthritissociety.png')" style="display:inline-block; width: 300px;">
-        AREP Referral Form
+    <div class="column box" @click='openInNewTab("arthritis.ca/support-education/support-in-your-community/arthritis-rehabilitation-and-education-program-(ar")'>
+      <div class="boxTitle">AREP Referral Form
+        <img :src="require('@/assets/images/links/arthritissociety.png')">
+      </div>
     </div>
-    <div class="column" @click="openInNewTab('arthritis.ca')"> 
-            <img :src="require('@/assets/images/links/arthritissociety.png')" style="display:inline-block; width: 300px;">
-              General Information
+    <div class="column box" @click="openInNewTab('arthritis.ca')"> 
+      <div class="boxTitle">General information
+      <img :src="require('@/assets/images/links/arthritissociety.png')">
+    </div>
     </div>
   </div>
   <div style="margin-top: 10px; color: grey">These links are provided for information only.</div>
@@ -52,21 +54,15 @@ export default {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.box{
-  margin-bottom:5px;
-  margin: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 1px solid #AAAAAA;
-  cursor:pointer;
-  height: 200px;
-  width: 300px;
-  font-size: 20px;
-  position: relative;
-  text-align: center;
+.box {
+border: 1px solid black;
+margin: 10px;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-.boxItem {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.boxTitle{
+  font-size: 20px;
 }
 </style>
