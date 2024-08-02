@@ -61,6 +61,7 @@ height: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 }
 .boxTitle{
   font-size: 20px;

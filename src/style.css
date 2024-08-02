@@ -1,21 +1,5 @@
-.slideshowButton{
-  margin: 10px;
-  padding-top: 20px;
-  width: 50px;
-  height: 90%;
-  background-color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slideshowContainer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  height: 500px;
-  width: 100%;
+.slideshow{
+  max-height: 400px;
 }
 
 .pdfHeader{
@@ -42,8 +26,6 @@ h2 {
   margin-top: 30px;
   margin-right: 20px;
   margin-left: 20px;
-  min-height: 400px;
-  max-width: 400px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   cursor: pointer;
@@ -134,18 +116,32 @@ font-weight: bold;
   color: black;
   text-align: left;
 }
-
+.welcomeTitle{
+  font-size: 40px;
+  color: black;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
 @media only screen and (max-width: 770px){
+  .slideshow{
+    height: 300px;
+  }
   .moving{
     text-align: center;
+  }
+  .welcomeTitle{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 20px;
   }
   .movingBanner{
     height: 200px;
     background-color: #ffcc6e;
   }
-  .slideshowContainer{
-    height: 300px;
-  }
+
   .staffCard{
     margin-left: 0px;
 
@@ -178,9 +174,6 @@ font-weight: bold;
 @media only screen and (min-width: 770px) and (max-width: 1000px) {
   .infoContainerInfo{
     font-size: 25px;
-  }
-  .slideshowContainer{
-    height: 300px;
   }
   .googleMap {
     margin-left: 0px;

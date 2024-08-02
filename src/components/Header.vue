@@ -3,8 +3,8 @@
       
       <div class="headerBanner">
         <div class="logoContainer" @click="goHome()">
-            <img :src="logoSource" style="width: 20%; height: auto;">
-            <img :src="titleSource" style="width: 100%; height: auto;">
+            <img :src="logoSource" style="width: 25%;">
+            <img :src="titleSource" style="width: 75%;">
             
         </div>
         <div class="headerAddress">Suite 100 - 195 County Court Blvd.<br>Brampton, ON, L6W 4P7</div>
@@ -181,11 +181,11 @@ export default {
 
 <style lang="scss">
 .header{
-
   position: fixed;
   z-index: 1;
   top: 0;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .headerBanner{
@@ -195,10 +195,21 @@ export default {
   width: 100%;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.logoContainer{
+  width: 100%;
+  max-height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  min-width: 100px;
 }
 .headerAddress{
-  margin-left: 100px;
-  padding-top: 35px;
   font-size: 15px;
   font-weight: bold;
   color: #994593;
@@ -208,7 +219,6 @@ export default {
   flex-direction: row;
   width: 100vw;
   background-color: white;
-  border-bottom: 1px solid black;
 }
 .headerDropdown{
   display: none;
@@ -289,15 +299,6 @@ export default {
 
 
 
-.logoContainer{
-  width: 100%;
-  max-height: 100px;
-  display: flex;
-  flex-direction: row;
-  max-width: 300px;
-  min-width: 100px;
-  padding-top: 20px;
-}
 
 @media only screen and (min-width: 770px) and (max-width: 1200px) {
 .headerLink{
@@ -312,8 +313,11 @@ export default {
 }
 
 @media only screen and (max-width: 770px){
-  .header{
-    height: 100px;
+  .logoContainer{
+    margin: 0px;
+  }
+  .headerBanner{
+    align-items: center;
   }
   .subList{
     visibility: visible;
@@ -343,18 +347,22 @@ export default {
 .headerImage{
   float: left;
 }
+.headerLink{
+  border-bottom: 1px solid black;
+}
+
 
 .burgerContainer{
   cursor: pointer;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding-right: 20px;
   width: 100%;
+  flex-basis: 33.33%;
 }
 
 .burger {
   float: right;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;

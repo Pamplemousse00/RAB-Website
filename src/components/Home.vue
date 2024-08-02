@@ -1,16 +1,37 @@
 <template>
   <div class="rows">
-    <div class="row movingBanner">
+    <div class="row movingBanner" style="border-radius: 15px;">
       <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #f0c2ed; cursor: pointer;" @click="gotoContact()">
         We have moved and the new office is open for <b>in-person appointments.</b><br>
         See the new address below, under "Contact Us".
       </div>
     </div>
-    <div class="row">
-      <div class="columns" style="margin-top: 50px">
-        <div class="column">
-          <Slideshow />
+    <div class="row" style="">
+      <div class="welcomeTitle">Welcome to Rheumatology Associates Brampton</div>
+      <div class="columns">
+        <div class="column" style="display: inline-flex">
+          <div class="columns">
+            <div class="column">
+              <div class="welcomeBody">
+                <br>
+                We are a group of rheumatologists who have been providing care to patients with arthritis and rheumatic diseases in Brampton and surrounding areas for the past 25 years. <br>
+                <br>Our rheumatologists are on staff at William Osler Health System - Brampton Civic Hospital.
+                We are a referral practice only, and you must be referred by your primary care practitioner.
+              </div>
+            </div>
+            <div class="column" style="margin-top: 30px;">
+              <b-carousel :indicator-inside="false">
+                <b-carousel-item v-for="i in 4" :key="i">
+                  <b-image class="image slideshow" :src="getImageSrc(i)"></b-image>
+                </b-carousel-item>
+            </b-carousel>
+            </div>
+          </div>         
         </div>
+      </div>
+    </div>
+    <div class="row" style="">
+      <div class="columns" style="margin-top: 50px">
         <div class="column" style="display: inline-flex">
           <div class="columns">
             <div class="column">
@@ -31,16 +52,8 @@
         </div>
       </div>
     </div>
-    <div class="row" style="margin-top: 80px; height: auto; background-color: #f0c2ed">
-      <div style="font-size: 40px; color: black">About Us</div>
-      <div style="color: black; font-size: 25px; text-align: center; max-width: 1000px; width: 90%; margin-left: auto; margin-right: auto; margin-top: 20px; padding-bottom: 30px;">
-      Welcome to Rheumatology Associates Brampton.<br><br>
-      We are a group of rheumatologists providing care to patients with arthritis and rheumatic diseases in Brampton and surrounding areas for the past 25 years. <br>
-      <br>Our rheumatologists are on staff at William Osler Health System - Brampton Civic Hospital.
-      We are a referral practice only, and you must be referred by your primary care practitioner.
-      </div>
-    </div>
-    <div class="row" style="height: auto; background-color: white" id="contact">
+    <div class="row" style="height: auto; background-color: white; margin-top: 20px;" id="contact">
+      <hr />
       <div style="font-size: 40px; color: black">Contact Us</div>
       <div class="columns">
         <div class="column">
@@ -57,52 +70,7 @@
             </div>        
             </div>
           </div>
-          <div class="phoneNumbers">
-            <table border=1 frame=void rules=rows  bordercolor="#ffffff">
-              <tr>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Extension
-                </th>
-                <th style="text-align: center">
-                  Fax
-                </th>
-              </tr>
-              <tr>
-                <td>Dr. Vandana Ahluwalia</td>
-                <td>EXT-1</td>
-                <td>905-799-8040</td>
-              </tr>
-              <tr>
-                <td>Dr. Sangeeta Bajaj</td>
-                <td>EXT-2</td>
-                <td>905-799-2055</td>
-              </tr>
-              <tr>
-                <td>Dr. Sangheeta Thiviyarajah</td>
-                <td>EXT-5</td>
-                <td>905-799-9463</td>
-              </tr>
-              <tr>
-                <td>Dr. Raman Joshi</td>
-                <td>EXT-3</td>
-                <td>905-799-3129</td>
-              </tr>
-              <tr>
-                <td>Dr. Tripti Papneja</td>
-                <td>EXT-4</td>
-                <td>905-799-3819</td>
-              </tr>
-              <tr>
-                <td>Early Arthritis Clinic</td>
-                <td>EXT-6</td>
-                <td>905-799-8178</td>
-              </tr>
-              
-            </table>
-          </div>
+          <b-table :data="contacts" :columns="columns" :hoverable="true" style="text-align: left; font-size: 25px"></b-table>
         </div>
       </div>
     </div> 
@@ -113,21 +81,73 @@
 
 
 <script>
-import Slideshow from './slideshow.vue'
 export default {
   name: 'Home',
   props: {
   },
   components: {
-    Slideshow,
+  },
+  data(){
+    return {
+      isMobile: true,
+      contacts: [
+        {
+          name: "Dr. Vandana Ahluwalia",
+          extension: "EXT-1",
+          fax: "905-799-8040"
+        },
+        {
+          name: "Dr. Sangeeta Bajaj",
+          extension: "EXT-2",
+          fax: "905-799-2055"
+        },
+        {
+          name: "Dr. Sangheeta Thiviyarajah",
+          extension: "EXT-5",
+          fax: "905-799-9463" 
+        },
+        {
+          name: "Dr. Raman Joshi",
+          extension: "EXT-3",
+          fax: "905-799-3129"
+        },
+        {
+          name: "Dr. Tripti Papneja",
+          extension: "EXT-4",
+          fax: "905-799-3819"
+        },
+        {
+          name: "Early Arthritis Clinic",
+          extension: "EXT-6",
+          fax: "905-799-8178"
+        }
+       ],
+       columns: [
+        {
+            field: "name",
+            label: "Name"
+        },
+        {
+            field: 'extension',
+            label: 'Extension',
+        },
+        {
+          field: "fax",
+          label: "Fax"
+        }
+      ]
+    }
   },
   mounted() {
-    //var section=this.$router.currentRoute.value.replace("#", "");
+    this.isMobile = visualViewport.width < 770 ? true : false
     var section = this.$router.currentRoute.hash.replace("#", "")
     if (section)
       this.$nextTick(()=> window.document.getElementById(section).scrollIntoView());
   },
   methods: {
+    getImageSrc(i) {
+      return require('@/assets/images/' + i + '.jpg');
+    },
     getGoogleMapSrc(){
       return require('@/assets/images/googleMap.jpg');
     },
@@ -143,16 +163,25 @@ export default {
 </script>
 
 <style scoped>
-th{
-  text-align: center;
-  padding-right: 10px;
-}
-td {
-  padding-right: 10px;
-}
 .movingBanner{
   background-color: #f0c2ed;
-  height: 100px;
+  height: auto;
   margin-top: -15px;
+}
+.welcomeBody{
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+.is-active .al img {
+    filter: grayscale(0%);
+}
+.al img {
+    filter: grayscale(100%);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <footer style="background-color: #f0c2ed; height: 100px; padding-top: 20px;">
-  <div class="content has-text-centered" style="color: black; font-size: 40px;">
+  <div style="background-color: #f0c2ed; height: 10%; padding-top: 20px;">
+  <div style="color: black;">
     <div class="footerText">
       Rheumatology Associates Brampton 2024
       <div class="terms">
@@ -9,7 +9,7 @@
     </div>
     
   </div>
-</footer>
+</div>
 </template>
 
 <script>

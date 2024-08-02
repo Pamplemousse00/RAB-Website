@@ -99,7 +99,6 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
   },
   mounted() {
     this.isMobile = visualViewport.width < 770 ? true : false
-    console.log(visualViewport.width)
   },
   methods: {
   }

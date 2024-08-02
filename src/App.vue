@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="overflow-x:hidden; position:relative;">
     <head>
       <title>Rheumatology Associates Brampton</title>
     </head>
@@ -8,7 +8,7 @@
     <div id="app">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
       <Header />
-      <router-view style="margin-top: 180px"/>
+      <router-view class="changeHeaderMargin"/>
       <Footer />
     </div>
     <teleport to="head">
@@ -64,7 +64,16 @@ $primary-invert: findColorInvert($primary);
   text-align: center;
   color: #2c3e50;
 }
+.changeHeaderMargin{
+  margin-top: 160px;
 
+}
+
+@media only screen and (max-width: 770px){
+  .changeHeaderMargin{
+    margin-top: 100px;
+  }
+}
 </style>
 
 
