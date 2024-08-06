@@ -1,32 +1,31 @@
 <template>
-<div>
-        <div class="content" style="font-size: 25px;">
-          <h1 style="text-align: center">Philanthropy</h1>
-
-          Rheumatology Associates Brampton has a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
+  <div>
+  <div class="heading1">
+    Links for Physicians
+  </div>
+  Rheumatology Associates Brampton has a keen interest in supporting charities.<br>We volunteer for and financially support hospitals and various organizations such as those listed below:<br><br>
     
-
-        </div>
-        <div class="columns charityContainer">
-          <div class="charityBox" style="display: inline;" @click="openInNewTab('oslerfoundation.org/')">
-          <img :src="holiPath" style="width: 100%;">
-            <div class="charityText">
-              WOHS Holi Gala
-            </div>
-          </div>
-          <div class="charityBox" @click="openInNewTab('www.aimforseva.ca')">
-          <img :src="aimPath" style="width: 100%;">
-          </div>
-          <div class="charityBox" @click="openInNewTab('www.arthritis.ca')">
-            <img :src="arthritisPath" style="width: 100%;">
-          </div>
-          <div class="charityBox" style="display: inline;" @click="openInNewTab('www.ourplacepeel.org')">
-            <img :src="peelPath" style="width: 100%;height: 80%;">
-            <div class="charityText">
-              Our Place Peel
-            </div>
-          </div>
-        </div>
+  <div class="columns" style="padding: 30px; justify-content: center;">
+    <div class="column box" @click="openInNewTab('oslerfoundation.org/')" >
+      <div class="boxTitle">WOHS Holi Gala
+        <img :src="holiPath" style="max-height: 100px;">
+      </div>
+      
+    </div>
+    <div class="column box" @click="openInNewTab('www.aimforseva.ca')">
+      <img :src="aimPath">
+    </div>
+    <div class="column box" @click='openInNewTab("www.arthritis.ca")'>
+      <img :src="arthritisPath">
+    </div>
+    <div class="column box" @click="openInNewTab('www.ourplacepeel.org')"> 
+      <div class="boxTitle">
+        <div style="height: 60%">Our Place Peel</div>
+        <img :src="peelPath" style="max-height:100px; max-width: 100px;">
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 10px; color: grey">These links are provided for information only.</div>
 </div>
   
 </template>
@@ -57,35 +56,27 @@ export default {
 </script>
 
 <style scoped>
-.heading1{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.charityContainer{
-  margin: 20px;
-}
-.charityBox{
-width: 100%;
-height: 300px;
+.box {
+border: 1px solid rgb(232, 232, 232);
 margin: 10px;
+height: 200px;
 display: flex;
 justify-content: center;
+flex-direction: row;
 align-items: center;
-transition: all .2s ease;
-margin-bottom: 100px;
 cursor: pointer;
+transition: all .2s ease;
 }
-.charityBox:hover{
+.box:hover{
   transform: scale(1.1);
 }
-.charityText{
-  text-align: center;
-  margin-left: 20px;
-  position: absolute;
-  color: black;
-  font-size: 40px;
+.boxTitle{
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+img {
+  max-height: 190px;
 }
 </style>

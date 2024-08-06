@@ -302,8 +302,8 @@ export default {
 
 @media only screen and (min-width: 770px) and (max-width: 1200px) {
 .headerLink{
-  font-size: 25px;
-  color: #7F397A;
+  font-size: 23px;
+  color: #000000;
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;

@@ -3,10 +3,11 @@
 }
 
 .pdfHeader{
-  display: block;
+  display:inline-flex;
   font-size: 25px;
   margin: 10px;
 }
+
 h1 {
   text-align: left;
   font-size: 20px;

@@ -63,14 +63,14 @@
           <div class="address">
             <div class="columns">
               <div class="column">
-              We have Moved. <br>
-              New Address is: <br>
+              We have moved as of November 2022 <br>
+              The new address is: <br>
               <b>Suite 100<br>195 County Court Blvd., <br>Brampton, L6W 4P7<br>
               Main Office #: 905-799-1850</b>
             </div>        
             </div>
           </div>
-          <b-table :data="contacts" :columns="columns" :hoverable="true" style="text-align: left; font-size: 25px"></b-table>
+          <b-table :data="contacts" :columns="columns" :hoverable="true" @click="copyNumber" style="text-align: left; font-size: 25px"></b-table>
         </div>
       </div>
     </div> 
@@ -157,6 +157,14 @@ export default {
     },
     openInNewTab(link) {
       window.open(link, '_blank');
+    },
+    copyNumber(row){
+      navigator.clipboard.writeText(row.fax);
+      this.$buefy.toast.open({
+        message: `${row.name}'s fax number copied to clipboard!`,
+        position: 'is-bottom',
+        type: 'is-success'
+      })
     }
   }
 }

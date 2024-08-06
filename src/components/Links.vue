@@ -48,22 +48,20 @@ export default {
 </script>
 
 <style scoped>
-.heading1{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
 .box {
-border: 1px solid black;
+border: 1px solid rgb(232, 232, 232);
 margin: 10px;
 height: 200px;
 display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+transition: all .2s ease;
+}
+.box:hover{
+  transform: scale(1.1);
 }
 .boxTitle{
-  font-size: 20px;
+  font-size: 25px;
 }
 </style>
