@@ -213,6 +213,7 @@ export default {
   font-size: 15px;
   font-weight: bold;
   color: #994593;
+  margin-left: 10px;
 }
 .headerMenu{
   display: flex;
