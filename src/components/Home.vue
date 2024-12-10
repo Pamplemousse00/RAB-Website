@@ -14,7 +14,7 @@
             <div class="column">
               <div class="welcomeBody">
                 <br>
-                We are a group of rheumatologists who have been providing care to patients with arthritis and rheumatic diseases in Brampton and surrounding areas for the past 25 years. <br>
+                We are a group of rheumatologists who have been providing care to patients with arthritis and rheumatic diseases in Brampton and surrounding areas for over 25 years. <br>
                 <br>Our rheumatologists are on staff at William Osler Health System - Brampton Civic Hospital.
                 We are a referral practice only, and you must be referred by your primary care practitioner.
               </div>
@@ -38,7 +38,7 @@
               <div class="infoContainer" style="background-color: #afceed; ">
                 <div class="infoContainerTitle black">What is a Rheumatologist?</div>
                 <div class="infoContainerInfo black">
-                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis!
+                  A Rheumatologist is a doctor that specializes in the diagnosis and treatment of autoimmune and arthritic conditions.  There are over 100 different types of arthritis.
                 </div>
               </div>
             </div>
@@ -63,8 +63,7 @@
           <div class="address">
             <div class="columns">
               <div class="column">
-              We have moved as of November 2022 <br>
-              The new address is: <br>
+              We are located at: <br>
               <b>Suite 100<br>195 County Court Blvd., <br>Brampton, L6W 4P7<br>
               Main Office #: 905-799-1850</b>
             </div>        
@@ -102,11 +101,6 @@ export default {
           fax: "905-799-2055"
         },
         {
-          name: "Dr. Sangheeta Thiviyarajah",
-          extension: "EXT-5",
-          fax: "905-799-9463" 
-        },
-        {
           name: "Dr. Raman Joshi",
           extension: "EXT-3",
           fax: "905-799-3129"
@@ -115,6 +109,11 @@ export default {
           name: "Dr. Tripti Papneja",
           extension: "EXT-4",
           fax: "905-799-3819"
+        },
+        {
+          name: "Dr. Sangheeta Thiviyarajah",
+          extension: "EXT-5",
+          fax: "905-799-9463" 
         },
         {
           name: "Early Arthritis Clinic",

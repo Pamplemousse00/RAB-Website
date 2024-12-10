@@ -91,13 +91,6 @@ export default {
             
           },
           {
-            name: "Dr. Sangheeta Thiviyarajah",
-            role: "Rheumatologist",
-            description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
-            color: "#bbbbbb"
-          },
-          {
             name: "Dr. Raman Joshi",
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
@@ -110,6 +103,13 @@ export default {
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/tripti.jpg'),
             color: "#f9ffcc"
+          },
+          {
+            name: "Dr. Sangheeta Thiviyarajah",
+            role: "Rheumatologist",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/silhouette.jpg'),
+            color: "#bbbbbb"
           },
           
       ],
@@ -131,13 +131,6 @@ export default {
           
         },
         {
-          name: "Zalesha",
-          role: "Medical Office Administrator",
-          description: "Lorem ipsum dolor di amet whatever.",
-          image: require('@/assets/images/staff/zalesha.jpg'),
-          color: "#bbbbbb"
-        },
-        {
           name: "Debbie",
           role: "Medical Office Administrator",
           description: "Lorem ipsum dolor di amet whatever.",
@@ -151,6 +144,13 @@ export default {
           image: require('@/assets/images/staff/amanda.jpg'),
           color: "#f9ffcc"
         },
+        {
+          name: "Sabrina TBD",
+          role: "Medical Office Administrator",
+          description: "Lorem ipsum dolor di amet whatever.",
+          image: require('@/assets/images/staff/silhouette.jpg'),
+          color: "#bbbbbb"
+        },
         
       ],
       scribes: [
@@ -160,6 +160,14 @@ export default {
             secondRole: "Dr. Ahluwalia",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/dilnoor.jpg'),
+            color: "#ffccb8"
+          },
+          {
+            name: "Pallavi TBD",
+            role: "Medical Scribe for",
+            secondRole: "Dr. Joshi & Dr. Thiviyarajah",
+            description: "Lorem ipsum dolor di amet whatever.",
+            image: require('@/assets/images/staff/silhouette.jpg'),
             color: "#ffccb8"
           },
           {
