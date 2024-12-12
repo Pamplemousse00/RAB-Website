@@ -6,8 +6,11 @@
           <h1 style="margin-left: 100px;">Office Referrals</h1>
           Attention Referring Doctors and Health Care Personnel, <br> <br>
 
-          Please complete this referral in its entirety and attach any investigations that have been completed by the patient such as:
+          Please complete this referral and attach any investigations that have been completed such as:
           <ul>
+            <li>
+              Labs
+            </li>
             <li>
               Xrays
             </li>
@@ -21,12 +24,9 @@
               MRIs
             </li>
           </ul>
-          that have been done for the affected areas within the last 2 years. 
-          Please also include up-to-date blood work, especially when referring for inflammatory disease.<br> <br>
 
           A complete referral can help expedite the triage process, and assist with timely care of your patient.<br><br>
-
-          Thank you, <br>
+          
           Rheumatology Associates Brampton<br>
 
         </div>

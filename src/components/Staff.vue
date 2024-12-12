@@ -105,7 +105,7 @@ export default {
             color: "#f9ffcc"
           },
           {
-            name: "Dr. Sangheeta Thiviyarajah",
+            name: "Dr. Sangeetha Thiviyarajah",
             role: "Rheumatologist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/silhouette.jpg'),
@@ -163,9 +163,9 @@ export default {
             color: "#ffccb8"
           },
           {
-            name: "Pallavi TBD",
+            name: "Pallawi Jhamat",
             role: "Medical Scribe for",
-            secondRole: "Dr. Joshi & Dr. Thiviyarajah",
+            secondRole: "Dr. Bajaj & Dr. Thiviyarajah",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/silhouette.jpg'),
             color: "#ffccb8"
@@ -180,15 +180,14 @@ export default {
           }        
       ],
       ahp: [
-        
-        {
-            name: "Nirmala Kodali",
+      {
+            name: "Coming Soon",
             role: "Early Arthritis Clinic",
             secondRole: "ACPAC Therapist",
             description: "Lorem ipsum dolor di amet whatever.",
             image: require('@/assets/images/staff/silhouette.jpg'),
             color: "#ffccfd",
-          },
+          }, 
           {
             name: "Nina Khabra",
             role: "EAC Medical Office Administrator",
@@ -204,7 +203,7 @@ export default {
             role: "Office Manager",
             secondRole: "RAB",
             description: "Lorem ipsum dolor di amet whatever.",
-            image: require('@/assets/images/staff/silhouette.jpg'),
+            image: require('@/assets/images/staff/ruth.png'),
             color: "#FFFFFF",
           },
       ]

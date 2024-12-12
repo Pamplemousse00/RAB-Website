@@ -17,8 +17,7 @@
             <p>The goal is to facilitate early assessment of IA and to enable rapid confirmation of diagnosis and initiation of 
             disease-modifying, anti-rheumatic drugs.</p>
 
-            <p>Referrals for the EAC should be made on the EAC Referral Form (click <router-link to="/referrals" style="color:blue">here</router-link>).</p>
-            <p>Other referral forms will not be accepted.</p>
+            <p>Referrals for the EAC should be made on the EAC Referral Form only.</p>
                   
             <p>Criteria for Suspected Diagnosis of Rheumatoid Arthritis (for at least 6 weeks):</p>
               <ol>

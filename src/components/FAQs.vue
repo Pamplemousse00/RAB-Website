@@ -56,9 +56,9 @@ export default {
           If you would like to contact the office, you can call: 905-799-1850.<br>
 Dr. Vandana Ahluwalia: EXT 1 <br>
 Dr. Sangeeta Bajaj: EXT 2 <br>
-Dr. Sangheeta Thiviyarajah: EXT 5 <br>
 Dr. Raman Joshi: EXT 3 <br>
 Dr. Tripti Papneja: EXT 4 <br>
+Dr. Sangeetha Thiviyarajah: EXT 5 <br>
 Early Arthritis Clinic: EXT 6 <br>
 Leave a detailed message with your name, phone number, Date of Birth, and what you're calling about.
 `
@@ -81,12 +81,8 @@ If you are having a medical emergency, call 911 or proceed to the nearest Emerge
         {
           question: "I have been referred for physiotherapy and I don't have private insurance coverage. Am I eligible for OHIP-covered physiotherapy? ",
           answer: `Please click <a href='https://www.ontario.ca/page/physiotherapy-clinics-government-funded'>HERE</a> to see if you are eligible.
-          Click <a href='https://www.health.gov.on.ca/en/public/programs/physio/pub_clinics.aspx'>HERE</a> to see clinics that may be near you.
+          Click <a href='https://www.ontario.ca/page/publicly-funded-physiotherapy-clinic-locations'>HERE</a> to see clinics that may be near you.
           `
-        },
-        {
-          question: "COVID-19 Vaccination Booster.",
-          answer: "A doctors note is <b>not</b> required. If you are on any of the medications listed <a href='https://health.gov.on.ca/en/pro/programs/publichealth/coronavirus/docs/vaccine/COVID-19_vaccine_third_dose_recommendations.pdf'>HERE</a>, bring them to the immunization centre to receive your third dose."
         },
       ],
       isMobile: true,

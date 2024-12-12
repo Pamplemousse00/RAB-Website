@@ -58,7 +58,7 @@
                   <a href="https://www.williamoslerhs.ca/en/areas-of-care/hip-and-knee-joint-osteoarthritis-rapid-access-clinic.aspx" target="_blank" class="subItem">
                     Rapid Access Clinic (hip & knee replacement)
                   </a>
-                  <a href="https://www.lowbackrac.ca/rac-lbp-registration.html" target="_blank" class="subItem">
+                  <a href="https://www.williamoslerhs.ca/en/areas-of-care/low-back-pain-rapid-access-clinic.aspx" target="_blank" class="subItem">
                     Rapid Access Clinic (Low Back Pain)
                   </a>
               </div>
@@ -93,6 +93,9 @@
               </a>
               <a class="subItem" href="https://arthritis.ca/treatment/medication/medication-reference-guide"  target="_blank">
                 Medications
+              </a>
+              <a class="subItem" href="https://www.doctorandreafurlan.com/"  target="_blank">
+                Chronic Pain
               </a>
               <hr class="dropdown-divider">
               <a class="subItem" href="https://arthritis.ca" target="_blank">

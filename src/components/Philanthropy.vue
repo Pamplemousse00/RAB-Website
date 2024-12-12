@@ -24,6 +24,12 @@
         <img :src="peelPath" style="max-height:100px; max-width: 100px;">
       </div>
     </div>
+    <div class="column box" @click="openInNewTab('www.crafoundation.ca')"> 
+      <div class="boxTitle">
+        <div style="height: 20%"></div>
+        <img :src="crafPath" style="max-height:200px; max-width: 200px;">
+      </div>
+    </div>
   </div>
   <div style="margin-top: 10px; color: grey">These links are provided for information only.</div>
 </div>
@@ -38,6 +44,7 @@ export default {
       aimPath: require('@/assets/images/Philanthropy/aimforseva.png'),
       arthritisPath: require('@/assets/images/Philanthropy/arthritissociety.png'),
       peelPath: require('@/assets/images/Philanthropy/ourplacepeel.jpg'),
+      crafPath: require('@/assets/images/Philanthropy/craf.png')
     }
   },
   name: 'FAQs',
@@ -56,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+.crafImage{
+  margin: 30px;
+}
 .box {
 border: 1px solid rgb(232, 232, 232);
 margin: 10px;

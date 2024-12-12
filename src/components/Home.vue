@@ -1,11 +1,5 @@
 <template>
   <div class="rows">
-    <div class="row movingBanner" style="border-radius: 15px;">
-      <div style="font-size: 25px; text-align: center; padding-top: 10px; color: black; background-color: #f0c2ed; cursor: pointer;" @click="gotoContact()">
-        We have moved and the new office is open for <b>in-person appointments.</b><br>
-        See the new address below, under "Contact Us".
-      </div>
-    </div>
     <div class="row" style="">
       <div class="welcomeTitle">Welcome to Rheumatology Associates Brampton</div>
       <div class="columns">
@@ -64,7 +58,7 @@
             <div class="columns">
               <div class="column">
               We are located at: <br>
-              <b>Suite 100<br>195 County Court Blvd., <br>Brampton, L6W 4P7<br>
+              <b>195 County Court Blvd., <br>Suite 100<br>Brampton, L6W 4P7<br>
               Main Office #: 905-799-1850</b>
             </div>        
             </div>
@@ -111,7 +105,7 @@ export default {
           fax: "905-799-3819"
         },
         {
-          name: "Dr. Sangheeta Thiviyarajah",
+          name: "Dr. Sangeetha Thiviyarajah",
           extension: "EXT-5",
           fax: "905-799-9463" 
         },
